@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vadym Antonyuk — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+  <style>
+    :root {
+      --bg: #f5f0e6;
+      --accent1: #db4f3d;
+      --accent3: #f7b801;
+      --text: #1d1d1d;
+      --frame: #111;
+
+      --color1-bg: #3a6ea5; --color1-accent: #f7b801;
+      --color2-bg: #db4f3d; --color2-accent: #f5f0e6;
+      --color3-bg: #597e52; --color3-accent: #f7b801;
+      --color4-bg: #e0a458; --color4-accent: #1d1d1d;
+      --color5-bg: #1c1c1c; --color5-accent: #db4f3d;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: var(--accent1);
+      color: #fff;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0.5em 0 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0.2em 0 1.5em;
+    }
+
+    .section {
+      padding: 4em 2em;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .series-block {
+      padding: 2em;
+      margin-bottom: 2em;
+      color: white;
+      border-left: 8px solid;
+    }
+
+    .color-1 { background-color: var(--color1-bg); border-left-color: var(--color1-accent); }
+    .color-2 { background-color: var(--color2-bg); border-left-color: var(--color2-accent); }
+    .color-3 { background-color: var(--color3-bg); border-left-color: var(--color3-accent); }
+    .color-4 { background-color: var(--color4-bg); border-left-color: var(--color4-accent); }
+    .color-5 { background-color: var(--color5-bg); border-left-color: var(--color5-accent); }
+
+    .series-block h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .series-block p {
+      font-size: 1rem;
+    }
+
+    .thumbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1em;
+    }
+
+    .thumbs img {
+      width: 120px;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .thumbs img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: var(--frame);
+      color: #fff;
+    }
+
+    a {
+      color: var(--accent3);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vadym Antonyuk</h1>
+    <p>Reconstruction of unreal design layers</p>
+    <p>↓</p>
+  </header>
+
+  <section class="section" id="series-container"></section>
+
+  <footer>
+    <p>Контакт: <a href="mailto:vadym@example.com">vadym@example.com</a> | <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Підтримати</a></p>
+    <p>&copy; 2025 Vadym Antonyuk</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+  <script>
+    function openLightbox(url) {
+      basicLightbox.create(`<img src="${url}" alt="artwork" style="max-width: 90vw; max-height: 90vh;">`).show();
+    }
+
+    fetch('works.json')
+      .then(response => response.json())
+      .then(seriesData => {
+        const container = document.getElementById("series-container");
+        seriesData.forEach((series) => {
+          const block = document.createElement("div");
+          block.className = `series-block color-${series.color}`;
+          block.innerHTML = `
+            <h2>${series.title}</h2>
+            <p>${series.year} / ${series.media}</p>
+            <p>${series.description}</p>
+            <div class="thumbs">
+              ${series.images.map(img => `<img src="${img}" onclick="openLightbox('${img}')">`).join('')}
+            </div>
+          `;
+          container.appendChild(block);
+        });
+      });
+  </script>
+</body>
+</html>

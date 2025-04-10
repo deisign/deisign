@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Urban Spaceman",
+    "year": "2023",
+    "media": "маркери / друк на картоні",
+    "description": "Футуризм, якого не було: архітектурні образи, натхненні радянськими каталогами і sci-fi постерами.",
+    "images": [
+      "https://i.imgur.com/abc1.jpg",
+      "https://i.imgur.com/abc2.jpg",
+      "https://i.imgur.com/abc3.jpg"
+    ],
+    "color": 1
+  },
+  {
+    "title": "Vertigo",
+    "year": "2024",
+    "media": "змішана техніка / сканований колаж",
+    "description": "Гіпнотичні візерунки, текстура сну, кадри з альтернативної реальності на тлі втрати балансу.",
+    "images": [
+      "https://i.imgur.com/xyz1.jpg",
+      "https://i.imgur.com/xyz2.jpg",
+      "https://i.imgur.com/xyz3.jpg"
+    ],
+    "color": 2
+  }
+]
