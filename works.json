@@ -164,5 +164,34 @@
       }
     ],
     "color": 3
+  },
+  {
+    "title": "Still Life Series",
+    "year": "2023",
+    "media": "linocut",
+    "description": "Synthetic still lifes: abstracted forms arranged with sacred geometry and vintage silence.",
+    "images": [
+      {
+        "title": "Still Life #02",
+        "year": 2023,
+        "url": "https://i.imgur.com/YuDmBPv.jpg"
+      },
+      {
+        "title": "Still Life #03",
+        "year": 2023,
+        "url": "https://i.imgur.com/9VBxiKy.jpg"
+      },
+      {
+        "title": "Still Life #04",
+        "year": 2023,
+        "url": "https://i.imgur.com/smQcfhg.jpg"
+      },
+      {
+        "title": "Still Life #05",
+        "year": 2023,
+        "url": "https://i.imgur.com/AmDZKkN.jpg"
+      }
+    ],
+    "color": 4
   }
 ]
