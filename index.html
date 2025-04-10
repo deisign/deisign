@@ -1,10 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vadym Antonyuk — Portfolio</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
@@ -88,8 +91,12 @@
       margin-top: 1em;
     }
 
-    .thumbs img {
+    .thumb {
       width: 120px;
+    }
+
+    .thumb img {
+      width: 100%;
       height: auto;
       cursor: pointer;
       border: 2px solid #fff;
@@ -97,8 +104,14 @@
       transition: transform 0.2s;
     }
 
-    .thumbs img:hover {
+    .thumb img:hover {
       transform: scale(1.05);
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      margin-top: 0.3em;
+      text-align: center;
     }
 
     footer {
@@ -128,7 +141,7 @@
   <section class="section" id="series-container"></section>
 
   <footer>
-    <p>Контакт: <a href="mailto:vadym@example.com">vadym@example.com</a> | <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Підтримати</a></p>
+    <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> | <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
     <p>&copy; 2025 Vadym Antonyuk</p>
   </footer>
 
@@ -150,7 +163,11 @@
             <p>${series.year} / ${series.media}</p>
             <p>${series.description}</p>
             <div class="thumbs">
-              ${series.images.map(img => `<img src="${img}" onclick="openLightbox('${img}')">`).join('')}
+              ${series.images.map(img => `
+                <div class="thumb">
+                  <img src="${img.url}" loading="lazy" onclick="openLightbox('${img.url}')">
+                  <p class="caption">${img.title} (${img.year})</p>
+                </div>`).join('')}
             </div>
           `;
           container.appendChild(block);

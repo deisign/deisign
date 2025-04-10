@@ -1,25 +1,101 @@
 [
   {
-    "title": "Urban Spaceman",
-    "year": "2023",
-    "media": "маркери / друк на картоні",
-    "description": "Футуризм, якого не було: архітектурні образи, натхненні радянськими каталогами і sci-fi постерами.",
-    "images": [],
+    "title": "Urban Spaceman Series",
+    "year": "2023–2024",
+    "media": "linocut",
+    "description": "Mid-century futurism that never happened: lost posters from imaginary space programs.",
+    "images": [
+      {
+        "title": "The Restaurant at the End of the Universe",
+        "year": 2023,
+        "url": "https://i.imgur.com/dxsUu8G.jpg"
+      },
+      {
+        "title": "Kozmic Blues",
+        "year": 2023,
+        "url": "https://i.imgur.com/pEcMbzi.jpg"
+      },
+      {
+        "title": "Take The A Train",
+        "year": 2023,
+        "url": "https://i.imgur.com/NFkbSrJ.jpg"
+      },
+      {
+        "title": "Man or Astroman?",
+        "year": 2023,
+        "url": "https://i.imgur.com/Qp6RExS.jpg"
+      },
+      {
+        "title": "Darwin Project",
+        "year": 2023,
+        "url": "https://i.imgur.com/almkoRM.jpg"
+      },
+      {
+        "title": "St.James Infirmary",
+        "year": 2023,
+        "url": "https://i.imgur.com/JejqlAv.jpg"
+      },
+      {
+        "title": "Grapes of Wrath",
+        "year": 2023,
+        "url": "https://i.imgur.com/Pf5qTZt.jpg"
+      },
+      {
+        "title": "Spaceball Ricochet",
+        "year": 2023,
+        "url": "https://i.imgur.com/aMlNrh6.jpg"
+      },
+      {
+        "title": "Rusty Cage",
+        "year": 2023,
+        "url": "https://i.imgur.com/lrpgoL8.jpg"
+      },
+      {
+        "title": "So Cold in Alaska",
+        "year": 2023,
+        "url": "https://i.imgur.com/EWHKG9Z.jpg"
+      },
+      {
+        "title": "Zero Gravity",
+        "year": 2023,
+        "url": "https://i.imgur.com/ADBjTds.jpg"
+      },
+      {
+        "title": "The Lone Surfer",
+        "year": 2023,
+        "url": "https://i.imgur.com/Uh13ySH.jpg"
+      },
+      {
+        "title": "Event Horizon",
+        "year": 2023,
+        "url": "https://i.imgur.com/YeBck1m.jpg"
+      },
+      {
+        "title": "The Lovers",
+        "year": 2023,
+        "url": "https://i.imgur.com/jjzk1K0.jpg"
+      },
+      {
+        "title": "Déjà vu",
+        "year": 2024,
+        "url": "https://i.imgur.com/09JlB7f.jpeg"
+      }
+    ],
     "color": 1
   },
   {
-    "title": "Vertigo",
+    "title": "Vertigo Series",
     "year": "2024",
-    "media": "змішана техніка / сканований колаж",
-    "description": "Гіпнотичні візерунки, текстура сну, кадри з альтернативної реальності на тлі втрати балансу.",
+    "media": "mixed media / scanned collage",
+    "description": "Hypnotic textures, frames from a dream — a dizziness of memory and motion.",
     "images": [],
     "color": 2
   },
   {
     "title": "Sacral Series",
     "year": "2023–2024",
-    "media": "ліногравюра",
-    "description": "Сакральна лінія: архетипи, обрядовість, алюзії на релігійне та культове. Спростити святе до графічного знаку.",
+    "media": "linocut",
+    "description": "The sacred reduced to symbols. Rituals and archetypes revisited in stark graphic form.",
     "images": [
       {
         "title": "Thea Domine",
