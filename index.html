@@ -8,8 +8,11 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="icon" href="32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="512.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    if (location.hostname === "www.deisign.me") {
+      location.href = location.href.replace("www.", "");
+    }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
   <style>
@@ -42,18 +45,12 @@
       justify-content: center;
       height: 100vh;
       background-color: var(--accent1);
-      color: #fff;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0.5em 0 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin: 0.2em 0 1.5em;
+    header img {
+      max-width: 120px;
+      margin-bottom: 1.2em;
     }
 
     .section {
@@ -119,6 +116,7 @@
       padding: 2em;
       background-color: var(--frame);
       color: #fff;
+      font-size: 0.9rem;
     }
 
     a {
@@ -133,16 +131,15 @@
 </head>
 <body>
   <header>
-    <h1>Vadym Antonyuk</h1>
-    <p>Reconstruction of unreal design layers</p>
-    <p>↓</p>
+    <img src="icon.svg" alt="logo">
   </header>
 
   <section class="section" id="series-container"></section>
 
   <footer>
+    <p>a synthesis of mid-century modern minimalism & vintage matchbox print aesthetics</p>
     <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> | <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
-    <p>&copy; 2025 Vadym Antonyuk</p>
+    <p>&copy; 2025</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
