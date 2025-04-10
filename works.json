@@ -4,11 +4,7 @@
     "year": "2023",
     "media": "маркери / друк на картоні",
     "description": "Футуризм, якого не було: архітектурні образи, натхненні радянськими каталогами і sci-fi постерами.",
-    "images": [
-      "https://i.imgur.com/abc1.jpg",
-      "https://i.imgur.com/abc2.jpg",
-      "https://i.imgur.com/abc3.jpg"
-    ],
+    "images": [],
     "color": 1
   },
   {
@@ -16,11 +12,7 @@
     "year": "2024",
     "media": "змішана техніка / сканований колаж",
     "description": "Гіпнотичні візерунки, текстура сну, кадри з альтернативної реальності на тлі втрати балансу.",
-    "images": [
-      "https://i.imgur.com/xyz1.jpg",
-      "https://i.imgur.com/xyz2.jpg",
-      "https://i.imgur.com/xyz3.jpg"
-    ],
+    "images": [],
     "color": 2
   },
   {
@@ -29,19 +21,71 @@
     "media": "ліногравюра",
     "description": "Сакральна лінія: архетипи, обрядовість, алюзії на релігійне та культове. Спростити святе до графічного знаку.",
     "images": [
-      "https://i.imgur.com/AMj6tpR.jpg",
-      "https://i.imgur.com/nrAww29.jpg",
-      "https://i.imgur.com/4vqyZkk.jpg",
-      "https://i.imgur.com/FEv0JN1.jpg",
-      "https://i.imgur.com/fSjCIyu.jpg",
-      "https://i.imgur.com/szKt2r3.jpg",
-      "https://i.imgur.com/UvhXd16.jpg",
-      "https://i.imgur.com/8ftaLpS.jpg",
-      "https://i.imgur.com/RoiFhlm.jpg",
-      "https://i.imgur.com/yu3VdLI.jpeg",
-      "https://i.imgur.com/Z0oXQqz.jpeg",
-      "https://i.imgur.com/gdCuWS9.jpeg",
-      "https://i.imgur.com/VHIaZG1.jpeg"
+      {
+        "title": "Thea Domine",
+        "year": 2023,
+        "url": "https://i.imgur.com/AMj6tpR.jpg"
+      },
+      {
+        "title": "Voodoo Witch",
+        "year": 2023,
+        "url": "https://i.imgur.com/nrAww29.jpg"
+      },
+      {
+        "title": "The Scarecrow",
+        "year": 2023,
+        "url": "https://i.imgur.com/4vqyZkk.jpg"
+      },
+      {
+        "title": "The Cult",
+        "year": 2023,
+        "url": "https://i.imgur.com/FEv0JN1.jpg"
+      },
+      {
+        "title": "Pieta",
+        "year": 2023,
+        "url": "https://i.imgur.com/fSjCIyu.jpg"
+      },
+      {
+        "title": "My Way",
+        "year": 2023,
+        "url": "https://i.imgur.com/szKt2r3.jpg"
+      },
+      {
+        "title": "Momus",
+        "year": 2023,
+        "url": "https://i.imgur.com/UvhXd16.jpg"
+      },
+      {
+        "title": "Sanctorium",
+        "year": 2023,
+        "url": "https://i.imgur.com/8ftaLpS.jpg"
+      },
+      {
+        "title": "The Tower",
+        "year": 2023,
+        "url": "https://i.imgur.com/RoiFhlm.jpg"
+      },
+      {
+        "title": "Subordination & Years of Service",
+        "year": 2024,
+        "url": "https://i.imgur.com/yu3VdLI.jpeg"
+      },
+      {
+        "title": "She’s Leaving Home",
+        "year": 2024,
+        "url": "https://i.imgur.com/Z0oXQqz.jpeg"
+      },
+      {
+        "title": "Alien",
+        "year": 2024,
+        "url": "https://i.imgur.com/gdCuWS9.jpeg"
+      },
+      {
+        "title": "(Three to) Tango",
+        "year": 2024,
+        "url": "https://i.imgur.com/VHIaZG1.jpeg"
+      }
     ],
     "color": 3
   }
