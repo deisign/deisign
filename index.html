@@ -4,62 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vadym Antonyuk — Portfolio</title>
+
+  <!-- favicons -->
+  <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="./512.png" type="image/png">
-  <link rel="icon" href="./32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="./512.png">
-  <script>
-    if (location.hostname === "www.deisign.me") {
-      location.href = location.href.replace("www.", "");
-    }
-  </script>
+
+  <!-- redirect www → root -->
+  <script>if(location.hostname.startsWith('www.'))location.href=location.href.replace('www.','');</script>
+
+  <!-- fonts & lightbox -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+
   <style>
-    /* —— global palette: 20 mid‑century + matchbox‑print inspired colours —— */
-    :root {
-      --paper-bg: #f5f0e6;
-      --paper-texture: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    /* ───────── base paper look ───────── */
+    :root{
+      --paper-bg:#f5f0e6;
+      --paper-texture:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
 
-      --color1-bg:#3A6EA5;  --color1-accent:#F7B801;  /* ultramarine / maize */
-      --color2-bg:#DB4F3D;  --color2-accent:#F5F0E6;  /* vermillion / paper */
-      --color3-bg:#597E52;  --color3-accent:#F7B801;  /* olive / maize */
-      --color4-bg:#E0A458;  --color4-accent:#1D1D1D;  /* ochre / charcoal */
-      --color5-bg:#1C1C1C;  --color5-accent:#DB4F3D;  /* charcoal / vermillion */
-      --color6-bg:#2E4559;  --color6-accent:#F7B801;  /* petrol / maize */
-      --color7-bg:#8E3A84;  --color7-accent:#F7B801;  /* plum / maize */
-      --color8-bg:#C4233C;  --color8-accent:#F5F0E6;  /* carmine / paper */
-      --color9-bg:#008C6C;  --color9-accent:#F7B801;  /* teal / maize */
-      --color10-bg:#F7B801; --color10-accent:#1C1C1C; /* maize / charcoal */
-      --color11-bg:#4E84C4; --color11-accent:#FFD7A0; /* cornflower / peach */
-      --color12-bg:#FF7F00; --color12-accent:#1D1D1D; /* orange / charcoal */
-      --color13-bg:#006AA7; --color13-accent:#F7B801; /* cyanotype / maize */
-      --color14-bg:#B71C1C; --color14-accent:#FFE1C6; /* deep red / cream */
-      --color15-bg:#355070; --color15-accent:#E9C46A; /* storm blue / sand */
-      --color16-bg:#5A352A; --color16-accent:#F1FAEE; /* espresso / off‑white */
-      --color17-bg:#264653; --color17-accent:#E76F51; /* prussian / coral */
-      --color18-bg:#008491; --color18-accent:#F9DC5C; /* jade / butter */
-      --color19-bg:#843B62; --color19-accent:#FFBC42; /* wine / amber */
-      --color20-bg:#6A4C93; --color20-accent:#F0F0F0;/* violet / light */
+      /* 20‑colour mid‑century + matchbox palette */
+      --color1-bg:#3A6EA5;  --color1-accent:#F7B801;
+      --color2-bg:#DB4F3D;  --color2-accent:#F5F0E6;
+      --color3-bg:#597E52;  --color3-accent:#F7B801;
+      --color4-bg:#E0A458;  --color4-accent:#1D1D1D;
+      --color5-bg:#1C1C1C;  --color5-accent:#DB4F3D;
+      --color6-bg:#2E4559;  --color6-accent:#F7B801;
+      --color7-bg:#8E3A84;  --color7-accent:#F7B801;
+      --color8-bg:#C4233C;  --color8-accent:#F5F0E6;
+      --color9-bg:#008C6C;  --color9-accent:#F7B801;
+      --color10-bg:#F7B801; --color10-accent:#1C1C1C;
+      --color11-bg:#4E84C4; --color11-accent:#FFD7A0;
+      --color12-bg:#FF7F00; --color12-accent:#1D1D1D;
+      --color13-bg:#006AA7; --color13-accent:#F7B801;
+      --color14-bg:#B71C1C; --color14-accent:#FFE1C6;
+      --color15-bg:#355070; --color15-accent:#E9C46A;
+      --color16-bg:#5A352A; --color16-accent:#F1FAEE;
+      --color17-bg:#264653; --color17-accent:#E76F51;
+      --color18-bg:#008491; --color18-accent:#F9DC5C;
+      --color19-bg:#843B62; --color19-accent:#FFBC42;
+      --color20-bg:#6A4C93; --color20-accent:#F0F0F0;
 
-      --text:#1D1D1D;
-      --frame:#111;
+      --text:#1D1D1D; --frame:#111;
     }
 
-    /* —— base styling —— */
-    body{margin:0;font-family:'Space Grotesk',sans-serif;background-color:var(--paper-bg);color:var(--text);background-image:var(--paper-texture);background-repeat:repeat}
+    body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper-bg)var(--paper-texture) repeat fixed;color:var(--text)}
 
-    header{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;background-color:var(--color2-bg);text-align:center}
-    header img{max-width:128px;margin-bottom:1.2em}
+    /* ───────── header ───────── */
+    header{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;background:var(--color2-bg);text-align:center}
+    header img{width:128px;height:128px}
 
+    /* ───────── filter bar ───────── */
     #filters{text-align:center;padding:1em}
-    #filters button{margin:0 6px;padding:6px 12px;font-family:'Space Grotesk',sans-serif;font-size:.9rem;border:none;background-color:var(--color1-bg);color:#fff;cursor:pointer}
-    #filters button:hover{background-color:var(--color1-accent)}
+    #filters button{margin:0 6px;padding:6px 12px;border:none;cursor:pointer;background:var(--color1-bg);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.9rem}
+    #filters button:hover{background:var(--color1-accent)}
 
+    /* ───────── series grid ───────── */
     .section{padding:4em 2em;max-width:960px;margin:0 auto}
     .series-block{padding:2em;margin-bottom:2em;color:#fff;border-left:8px solid}
-
-    /* —— generated colour classes —— */
-"""+"\n".join([f"    .color-{i}{{background-color:var(--color{i}-bg);border-left-color:var(--color{i}-accent);}}" for i in range(1,21)])+r"
+    /* generated colour classes */
+""" + "\n".join([f"    .color-{i}{{background:var(--color{i}-bg);border-left-color:var(--color{i}-accent);}}" for i in range(1,21)]) + r"""
 
     .thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:1em}
     .thumb{width:120px}
@@ -67,14 +71,15 @@
     .thumb img:hover{transform:scale(1.05)}
     .caption{font-size:.8rem;margin-top:.3em;text-align:center}
 
-    footer{text-align:center;padding:2em;background-color:var(--frame);color:#fff;font-size:.9rem}
+    /* ───────── footer ───────── */
+    footer{text-align:center;padding:2em;background:var(--frame);color:#fff;font-size:.9rem}
     a{color:var(--color10-bg);text-decoration:none}
     a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
   <header>
-    <img src="./512.png" alt="logo" width="128" height="128">
+    <img src="./512.png" alt="logo">
   </header>
 
   <div id="filters">
@@ -89,16 +94,31 @@
   <section class="section" id="series-container"></section>
 
   <footer>
-    <p>a synthesis of mid-century modern minimalism & vintage matchbox print aesthetics</p>
+    <p>a synthesis of mid‑century modern minimalism &amp; vintage matchbox print aesthetics</p>
     <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
-    <p>&copy; 2025</p>
+    <p>&copy; 2025</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
   <script>
-    function openLightbox(url){basicLightbox.create(`<img src="${url}" style="max-width:90vw;max-height:90vh">`).show()}
-    function filterBy(tech){const c=document.getElementById('series-container');c.innerHTML='';fetch('works.json').then(r=>r.json()).then(d=>{d.forEach(s=>{if(tech==='All'||(s.media&&s.media.toLowerCase().includes(tech.toLowerCase()))){const b=document.createElement('div');b.className=`series-block color-${s.color}`;b.innerHTML=`<h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p><div class='thumbs'>${s.images.map(img=>`<div class='thumb'><img src='${img.url}' loading='lazy' onclick='openLightbox("${img.url}")'><p class='caption'>${img.title} (${img.year})</p></div>`).join('')}</div>`;c.appendChild(b);}});});}
-    filterBy('All');
+    function openLightbox(url){basicLightbox.create(`<img src='${url}' style='max-width:90vw;max-height:90vh'>`).show()}
+
+    function renderSeries(filter='All'){
+      const container=document.getElementById('series-container');
+      container.innerHTML='';
+      fetch('works.json').then(r=>r.json()).then(data=>{
+        data.forEach(series=>{
+          if(filter==='All'||(series.media&&series.media.toLowerCase().includes(filter.toLowerCase()))){
+            const block=document.createElement('div');
+            block.className=`series-block color-${series.color}`;
+            block.innerHTML=`<h2>${series.title}</h2><p>${series.year} / ${series.media}</p><p>${series.description}</p><div class='thumbs'>${series.images.map(img=>`<div class='thumb'><img src='${img.url}' loading='lazy' onclick='openLightbox("${img.url}")'><p class='caption'>${img.title} (${img.year})</p></div>`).join('')}</div>`;
+            container.appendChild(block);
+          }
+        });
+      });
+    }
+    function filterBy(t){renderSeries(t)}
+    renderSeries();
   </script>
 </body>
 </html>
