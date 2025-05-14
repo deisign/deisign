@@ -1,5 +1,16 @@
 [
   {
+  "title": "Soul Bass Series",
+  "year": "2025",
+  "media": "digital",
+  "description": "Two poster riffs on Bob Marley & Pink Floyd — minimal silhouettes, punchy typography, pure Saul Bass vibe.",
+  "images": [
+    { "title": "Nobody Home",                "year": 2025, "url": "https://i.imgur.com/f7g5uBZ.jpeg" },
+    { "title": "Turn Your Lights Down Low",  "year": 2025, "url": "https://i.imgur.com/l1dzbDG.jpeg" }
+  ],
+  "color": 19
+},
+  {
     "title": "Urban Spaceman Series",
     "year": "2023–2024",
     "media": "linocut",
