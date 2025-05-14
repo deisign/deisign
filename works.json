@@ -297,5 +297,22 @@
     { "title": "One Shot",               "year": 2022, "url": "https://i.imgur.com/nz7wEEK.jpg" }
   ],
   "color": 8
+},
+  {
+  "title": "Hommages Series",
+  "year": "2019–2022",
+  "media": "digital",
+  "description": "A pocket hall of fame: eight visual tributes that riff on cult albums, cinema frames and modern‑art legends.",
+  "images": [
+    { "title": "Ray",                      "year": 2019, "url": "https://i.imgur.com/zFf3pHY.jpg" },
+    { "title": "The Kiss",                 "year": 2019, "url": "https://i.imgur.com/B5UvPfJ.jpg" },
+    { "title": "Turtle Soup",              "year": 2019, "url": "https://i.imgur.com/otsZyHF.jpg" },
+    { "title": "The Graduate",             "year": 2019, "url": "https://i.imgur.com/TMBBiRp.jpg" },
+    { "title": "Dark Side of the Moon",    "year": 2019, "url": "https://i.imgur.com/eFe3H3d.jpg" },
+    { "title": "Pop Art Icon",             "year": 2020, "url": "https://i.imgur.com/pPlJFX6.jpg" },
+    { "title": "Ceci n’est pas une pipe",  "year": 2021, "url": "https://i.imgur.com/UsLCrMW.jpg" },
+    { "title": "Jazz Blamed",              "year": 2022, "url": "https://i.imgur.com/XJorhx2.jpg" }
+  ],
+  "color": 9
 }
 ]
