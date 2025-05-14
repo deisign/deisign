@@ -385,5 +385,20 @@
     { "title": "Voyeur",        "year": 2020, "url": "https://i.imgur.com/1fQkDSj.jpg" }
   ],
   "color": 12
+},
+{
+  "title": "Propaganda Series",
+  "year": "2019–2022",
+  "media": "digital",
+  "description": "Bold poster statements mixing vintage agit‑prop layouts with 21‑st‑century slogans and frontline irony.",
+  "images": [
+    { "title": "Free Borsht",        "year": 2019, "url": "https://i.imgur.com/Js3XA3d.jpg" },
+    { "title": "Fireworks",          "year": 2020, "url": "https://i.imgur.com/SxE4bHK.jpg" },
+    { "title": "La Résistance",      "year": 2021, "url": "https://i.imgur.com/0ordeXO.jpg" },
+    { "title": "russian warship",    "year": 2022, "url": "https://i.imgur.com/gAd4TlU.jpg" },
+    { "title": "Ukraine Now",        "year": 2022, "url": "https://i.imgur.com/W0L3LEb.jpg" },
+    { "title": "Smoke on the Water", "year": 2022, "url": "https://i.imgur.com/4a8Hu7h.jpg" }
+  ],
+  "color": 13
 }
 ]
