@@ -4,19 +4,24 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vadym Antonyuk — Portfolio</title>
+
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-<script>if(location.hostname.startsWith('www.')) location.href=location.href.replace('www.','');</script>
+
+<!-- redirect www → root -->
+<script>if(location.hostname.startsWith('www.'))location.href=location.href.replace('www.','');</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://i.imgur.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+
 <style>
-/* paper background */
 :root{
   --paper-bg:#f5f0e6;
-  --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat fixed;
   --frame:#111;
   --btn:#3A6EA5; --btn-hover:#F7B801;
+
   /* 20‑colour palette */
   --c1:#3A6EA5;  --a1:#F7B801;
   --c2:#DB4F3D;  --a2:#F5F0E6;
@@ -39,12 +44,29 @@
   --c19:#843B62; --a19:#FFBC42;
   --c20:#6A4C93; --a20:#F0F0F0;
 }
-body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper-bg) var(--paper-text) repeat fixed;color:#1d1d1d}
-header{display:flex;align-items:center;justify-content:center;height:100vh;background:var(--c2)}
+
+body{
+  margin:0;
+  font-family:'Space Grotesk',sans-serif;
+  background:var(--paper-bg) var(--paper-text);
+  color:#1d1d1d;
+}
+
+/* header */
+header{
+  display:flex;align-items:center;justify-content:center;
+  height:100vh;background:var(--c2);
+}
 header img{width:128px;height:128px}
+
+/* filter bar */
 #filters{text-align:center;padding:1em}
-#filters button{margin:4px 6px;padding:6px 12px;border:none;cursor:pointer;background:var(--btn);color:#fff;font-size:.9rem}
+#filters button{
+  margin:4px 6px;padding:6px 12px;border:none;cursor:pointer;
+  background:var(--btn);color:#fff;font-size:.9rem}
 #filters button:hover{background:var(--btn-hover)}
+
+/* series grid */
 .section{padding:4em 2em;max-width:960px;margin:0 auto}
 .series-block{padding:2em;margin-bottom:2em;color:#fff;border-left:8px solid}
 .color-1{background:var(--c1);border-left-color:var(--a1)}
@@ -67,20 +89,29 @@ header img{width:128px;height:128px}
 .color-18{background:var(--c18);border-left-color:var(--a18)}
 .color-19{background:var(--c19);border-left-color:var(--a19)}
 .color-20{background:var(--c20);border-left-color:var(--a20)}
+
 .thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:1em}
 .thumb{width:120px}
-.thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
+.thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;
+  box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
 .thumb img:hover{transform:scale(1.05)}
 .caption{font-size:.8rem;margin-top:.3em;text-align:center}
-.load-more{display:block;margin:2em auto;padding:.6em 1.4em;border:none;cursor:pointer;background:var(--btn);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.9rem}
+
+/* load more */
+.load-more{display:block;margin:2em auto;padding:.6em 1.4em;border:none;
+  cursor:pointer;background:var(--btn);color:#fff;font-size:.9rem}
 .load-more:hover{background:var(--btn-hover)}
+
+/* footer */
 footer{text-align:center;padding:2em;background:var(--frame);color:#fff;font-size:.9rem}
 footer a{color:var(--c10);text-decoration:none}
 footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
+
 <header><img src="./512.png" alt="logo"></header>
+
 <div id="filters">
   <button onclick="filterBy('All')">All</button>
   <button onclick="filterBy('Linocut')">Linocut</button>
@@ -89,17 +120,65 @@ footer a:hover{text-decoration:underline}
   <button onclick="filterBy('Digital')">Digital</button>
   <button onclick="filterBy('Drypoint')">Drypoint</button>
 </div>
+
 <section class="section" id="series-container"></section>
 <button id="moreBtn" class="load-more" style="display:none" onclick="loadMore()">Load more</button>
+
 <footer>
   <p>a synthesis of mid‑century modern minimalism & vintage matchbox print aesthetics</p>
   <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
   <p>&copy; 2025</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basiclightbox.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 <script>
-const BATCH=6;let all=[],rendered=0,filter='All';
-function thumb(u){return u.replace(/\.(jpe?g|png|webp)$/i,'l.$1')}
-function openLight(u){basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show()}
-function block(s){return`<div class='series-block color-${s.color}'><h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p><div class='thumbs'>${s.images.map(i=>`<div class='thumb'><img src='${thumb(i.url)}' loading='lazy' onclick='openLight("${i.url}")'><p class='caption'>${i.title} (${i.year})</p></div>`).join('')}</div></div>`}
-function loadMore(){const c
+const BATCH = 6;                   // серий за одну подгрузку
+let allSeries = [], rendered = 0, currentFilter = 'All';
+
+function thumb(u){return u.replace(/\.(jpe?g|png|webp)$/i,'l.$1');}
+function openLight(u){basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show();}
+
+function makeBlock(s){
+  return `<div class='series-block color-${s.color}'>
+    <h2>${s.title}</h2>
+    <p>${s.year} / ${s.media}</p>
+    <p>${s.description}</p>
+    <div class='thumbs'>
+      ${s.images.map(i=>`
+        <div class='thumb'>
+          <img src='${thumb(i.url)}' loading='lazy' onclick='openLight("${i.url}")'>
+          <p class='caption'>${i.title} (${i.year})</p>
+        </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+function loadMore(){
+  const box = document.getElementById('series-container');
+  let added = 0;
+  for(; rendered < allSeries.length && added < BATCH; rendered++){
+    const s = allSeries[rendered];
+    if(currentFilter === 'All' || (s.media && s.media.toLowerCase().includes(currentFilter.toLowerCase()))){
+      box.insertAdjacentHTML('beforeend', makeBlock(s));
+      added++;
+    }
+  }
+  document.getElementById('moreBtn').style.display = rendered < allSeries.length ? 'block' : 'none';
+}
+
+function filterBy(tech){
+  currentFilter = tech;
+  rendered = 0;
+  document.getElementById('series-container').innerHTML = '';
+  loadMore();
+}
+
+fetch('works.json')
+  .then(r=>r.json())
+  .then(data=>{
+    allSeries = data;
+    loadMore();
+  });
+</script>
+</body>
+</html>
