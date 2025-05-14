@@ -4,25 +4,42 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vadym Antonyuk — Portfolio</title>
-
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-<script>if(location.hostname.startsWith('www.'))location.href=location.href.replace('www.','');</script>
+<script>if(location.hostname.startsWith('www.')) location.href=location.href.replace('www.','');</script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://i.imgur.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
-
 <style>
+/* paper background */
 :root{
-  --paper:#f5f0e6 url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat fixed;
+  --paper-bg:#f5f0e6;
+  --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   --frame:#111;
-  --btn:#3A6EA5;--btn-hover:#F7B801;
-  --c1:#3A6EA5;--a1:#F7B801;--c2:#DB4F3D;--a2:#F5F0E6;--c3:#597E52;--a3:#F7B801;--c4:#E0A458;--a4:#1D1D1D;--c5:#1C1C1C;--a5:#DB4F3D;
-  --c6:#2E4559;--a6:#F7B801;--c7:#8E3A84;--a7:#F7B801;--c8:#C4233C;--a8:#F5F0E6;--c9:#008C6C;--a9:#F7B801;--c10:#F7B801;--a10:#1C1C1C;
-  --c11:#4E84C4;--a11:#FFD7A0;--c12:#FF7F00;--a12:#1D1D1D;--c13:#006AA7;--a13:#F7B801;--c14:#B71C1C;--a14:#FFE1C6;--c15:#355070;--a15:#E9C46A;
-  --c16:#5A352A;--a16:#F1FAEE;--c17:#264653;--a17:#E76F51;--c18:#008491;--a18:#F9DC5C;--c19:#843B62;--a19:#FFBC42;--c20:#6A4C93;--a20:#F0F0F0;
+  --btn:#3A6EA5; --btn-hover:#F7B801;
+  /* 20‑colour palette */
+  --c1:#3A6EA5;  --a1:#F7B801;
+  --c2:#DB4F3D;  --a2:#F5F0E6;
+  --c3:#597E52;  --a3:#F7B801;
+  --c4:#E0A458;  --a4:#1D1D1D;
+  --c5:#1C1C1C;  --a5:#DB4F3D;
+  --c6:#2E4559;  --a6:#F7B801;
+  --c7:#8E3A84;  --a7:#F7B801;
+  --c8:#C4233C;  --a8:#F5F0E6;
+  --c9:#008C6C;  --a9:#F7B801;
+  --c10:#F7B801; --a10:#1C1C1C;
+  --c11:#4E84C4; --a11:#FFD7A0;
+  --c12:#FF7F00; --a12:#1D1D1D;
+  --c13:#006AA7; --a13:#F7B801;
+  --c14:#B71C1C; --a14:#FFE1C6;
+  --c15:#355070; --a15:#E9C46A;
+  --c16:#5A352A; --a16:#F1FAEE;
+  --c17:#264653; --a17:#E76F51;
+  --c18:#008491; --a18:#F9DC5C;
+  --c19:#843B62; --a19:#FFBC42;
+  --c20:#6A4C93; --a20:#F0F0F0;
 }
-body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper);color:#1d1d1d}
+body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper-bg) var(--paper-text) repeat fixed;color:#1d1d1d}
 header{display:flex;align-items:center;justify-content:center;height:100vh;background:var(--c2)}
 header img{width:128px;height:128px}
 #filters{text-align:center;padding:1em}
@@ -30,8 +47,26 @@ header img{width:128px;height:128px}
 #filters button:hover{background:var(--btn-hover)}
 .section{padding:4em 2em;max-width:960px;margin:0 auto}
 .series-block{padding:2em;margin-bottom:2em;color:#fff;border-left:8px solid}
-"+ "
-".join([f".color-{i}{{background:var(--c{i});border-left-color:var(--a{i})}}" for i in range(1,21)]) +"
+.color-1{background:var(--c1);border-left-color:var(--a1)}
+.color-2{background:var(--c2);border-left-color:var(--a2)}
+.color-3{background:var(--c3);border-left-color:var(--a3)}
+.color-4{background:var(--c4);border-left-color:var(--a4)}
+.color-5{background:var(--c5);border-left-color:var(--a5)}
+.color-6{background:var(--c6);border-left-color:var(--a6)}
+.color-7{background:var(--c7);border-left-color:var(--a7)}
+.color-8{background:var(--c8);border-left-color:var(--a8)}
+.color-9{background:var(--c9);border-left-color:var(--a9)}
+.color-10{background:var(--c10);border-left-color:var(--a10)}
+.color-11{background:var(--c11);border-left-color:var(--a11)}
+.color-12{background:var(--c12);border-left-color:var(--a12)}
+.color-13{background:var(--c13);border-left-color:var(--a13)}
+.color-14{background:var(--c14);border-left-color:var(--a14)}
+.color-15{background:var(--c15);border-left-color:var(--a15)}
+.color-16{background:var(--c16);border-left-color:var(--a16)}
+.color-17{background:var(--c17);border-left-color:var(--a17)}
+.color-18{background:var(--c18);border-left-color:var(--a18)}
+.color-19{background:var(--c19);border-left-color:var(--a19)}
+.color-20{background:var(--c20);border-left-color:var(--a20)}
 .thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:1em}
 .thumb{width:120px}
 .thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
@@ -61,17 +96,10 @@ footer a:hover{text-decoration:underline}
   <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
   <p>&copy; 2025</p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basiclightbox.min.js"></script>
 <script>
-const SERIES_PER_BATCH=6;let allSeries=[],rendered=0,currentFilter='All';
+const BATCH=6;let all=[],rendered=0,filter='All';
 function thumb(u){return u.replace(/\.(jpe?g|png|webp)$/i,'l.$1')}
-function openLightbox(u){basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show()}
-function buildBlock(s){return `<div class='series-block color-${s.color}'><h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p><div class='thumbs'>${s.images.map(i=>`<div class='thumb'><img src='${thumb(i.url)}' loading='lazy' onclick='openLightbox("${i.url}")'><p class='caption'>${i.title} (${i.year})</p></div>`).join('')}</div></div>`}
-function applyFilter(){const c=document.getElementById('series-container');c.innerHTML='';rendered=0;loadMore()}
-function loadMore(){const c=document.getElementById('series-container');let count=0;for(;rendered<allSeries.length&&count<SERIES_PER_BATCH;rendered++){const s=allSeries[rendered];if(currentFilter==='All'||(s.media&&s.media.toLowerCase().includes(currentFilter.toLowerCase()))){c.insertAdjacentHTML('beforeend',buildBlock(s));count++}}document.getElementById('moreBtn').style.display=rendered<allSeries.length?'block':'none'}
-function filterBy(t){currentFilter=t;applyFilter()}
-fetch('works.json').then(r=>r.json()).then(d=>{allSeries=d;applyFilter()})
-</script>
-</body>
-</html>
+function openLight(u){basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show()}
+function block(s){return`<div class='series-block color-${s.color}'><h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p><div class='thumbs'>${s.images.map(i=>`<div class='thumb'><img src='${thumb(i.url)}' loading='lazy' onclick='openLight("${i.url}")'><p class='caption'>${i.title} (${i.year})</p></div>`).join('')}</div></div>`}
+function loadMore(){const c
