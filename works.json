@@ -195,3 +195,24 @@
     "color": 4
   }
 ]
+{
+  "title": "Neo Noir Series",
+  "year": "2023–2024",
+  "media": "linocut",
+  "description": "A graphic ode to classic noir tropes—sleek silhouettes, harsh shadows and existential one‑liners, re‑imagined in bold mid‑century blocks.",
+  "images": [
+    { "title": "So?",                "year": 2023, "url": "https://i.imgur.com/nX5SRoe.jpg" },
+    { "title": "Marlowe",            "year": 2023, "url": "https://i.imgur.com/9GDpfcJ.jpg" },
+    { "title": "Return",             "year": 2023, "url": "https://i.imgur.com/2si6qkk.jpg" },
+    { "title": "Follow the Light",   "year": 2023, "url": "https://i.imgur.com/CFPyT8f.jpg" },
+    { "title": "Predator of Love",   "year": 2023, "url": "https://i.imgur.com/aRX7sBi.jpg" },
+    { "title": "Wait",               "year": 2023, "url": "https://i.imgur.com/x3ANI9Z.jpg" },
+    { "title": "Enter #2",           "year": 2023, "url": "https://i.imgur.com/uVqrm7F.jpg" },
+    { "title": "Predator of Love #2","year": 2023, "url": "https://i.imgur.com/RaaUxWU.jpg" },
+    { "title": "JD",                 "year": 2023, "url": "https://i.imgur.com/4BAJ6ZT.jpg" },
+    { "title": "The Wayward Bus",    "year": 2023, "url": "https://i.imgur.com/UH92m25.jpg" },
+    { "title": "Foot Fetish",        "year": 2024, "url": "https://i.imgur.com/9gknWkI.jpeg" },
+    { "title": "Trimūrti",           "year": 2024, "url": "https://i.imgur.com/7HlUIoR.jpeg" }
+  ],
+  "color": 5
+}
