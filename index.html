@@ -5,112 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vadym Antonyuk — Portfolio</title>
 
-<!-- favicon -->
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-
-<!-- redirect www → root -->
 <script>if(location.hostname.startsWith('www.'))location.href=location.href.replace('www.','');</script>
-
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://i.imgur.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
 
 <style>
-/* —— paper background —— */
 :root{
-  --paper-bg:#f5f0e6;
-  --paper-texture:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-
-/* —— 20‑colour palette —— */
-  --color1-bg:#3A6EA5;  --color1-accent:#F7B801;
-  --color2-bg:#DB4F3D;  --color2-accent:#F5F0E6;
-  --color3-bg:#597E52;  --color3-accent:#F7B801;
-  --color4-bg:#E0A458;  --color4-accent:#1D1D1D;
-  --color5-bg:#1C1C1C;  --color5-accent:#DB4F3D;
-  --color6-bg:#2E4559;  --color6-accent:#F7B801;
-  --color7-bg:#8E3A84;  --color7-accent:#F7B801;
-  --color8-bg:#C4233C;  --color8-accent:#F5F0E6;
-  --color9-bg:#008C6C;  --color9-accent:#F7B801;
-  --color10-bg:#F7B801; --color10-accent:#1C1C1C;
-  --color11-bg:#4E84C4; --color11-accent:#FFD7A0;
-  --color12-bg:#FF7F00; --color12-accent:#1D1D1D;
-  --color13-bg:#006AA7; --color13-accent:#F7B801;
-  --color14-bg:#B71C1C; --color14-accent:#FFE1C6;
-  --color15-bg:#355070; --color15-accent:#E9C46A;
-  --color16-bg:#5A352A; --color16-accent:#F1FAEE;
-  --color17-bg:#264653; --color17-accent:#E76F51;
-  --color18-bg:#008491; --color18-accent:#F9DC5C;
-  --color19-bg:#843B62; --color19-accent:#FFBC42;
-  --color20-bg:#6A4C93; --color20-accent:#F0F0F0;
-
-  --text:#1d1d1d; --frame:#111;
+  --paper:#f5f0e6 url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat fixed;
+  --frame:#111;
+  --btn:#3A6EA5;--btn-hover:#F7B801;
+  --c1:#3A6EA5;--a1:#F7B801;--c2:#DB4F3D;--a2:#F5F0E6;--c3:#597E52;--a3:#F7B801;--c4:#E0A458;--a4:#1D1D1D;--c5:#1C1C1C;--a5:#DB4F3D;
+  --c6:#2E4559;--a6:#F7B801;--c7:#8E3A84;--a7:#F7B801;--c8:#C4233C;--a8:#F5F0E6;--c9:#008C6C;--a9:#F7B801;--c10:#F7B801;--a10:#1C1C1C;
+  --c11:#4E84C4;--a11:#FFD7A0;--c12:#FF7F00;--a12:#1D1D1D;--c13:#006AA7;--a13:#F7B801;--c14:#B71C1C;--a14:#FFE1C6;--c15:#355070;--a15:#E9C46A;
+  --c16:#5A352A;--a16:#F1FAEE;--c17:#264653;--a17:#E76F51;--c18:#008491;--a18:#F9DC5C;--c19:#843B62;--a19:#FFBC42;--c20:#6A4C93;--a20:#F0F0F0;
 }
-
-body{
-  margin:0;
-  font-family:'Space Grotesk',sans-serif;
-  background:var(--paper-bg) var(--paper-texture) repeat fixed;
-  color:var(--text);
-}
-
-/* —— header —— */
-header{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  height:100vh;background:var(--color2-bg);text-align:center}
+body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper);color:#1d1d1d}
+header{display:flex;align-items:center;justify-content:center;height:100vh;background:var(--c2)}
 header img{width:128px;height:128px}
-
-/* —— filter bar —— */
 #filters{text-align:center;padding:1em}
-#filters button{
-  margin:0 6px;padding:6px 12px;border:none;cursor:pointer;
-  background:var(--color1-bg);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.9rem}
-#filters button:hover{background:var(--color1-accent)}
-
-/* —— series grid —— */
+#filters button{margin:4px 6px;padding:6px 12px;border:none;cursor:pointer;background:var(--btn);color:#fff;font-size:.9rem}
+#filters button:hover{background:var(--btn-hover)}
 .section{padding:4em 2em;max-width:960px;margin:0 auto}
 .series-block{padding:2em;margin-bottom:2em;color:#fff;border-left:8px solid}
-
-/* —— generated colour classes —— */
-.color-1{background:var(--color1-bg);border-left-color:var(--color1-accent)}
-.color-2{background:var(--color2-bg);border-left-color:var(--color2-accent)}
-.color-3{background:var(--color3-bg);border-left-color:var(--color3-accent)}
-.color-4{background:var(--color4-bg);border-left-color:var(--color4-accent)}
-.color-5{background:var(--color5-bg);border-left-color:var(--color5-accent)}
-.color-6{background:var(--color6-bg);border-left-color:var(--color6-accent)}
-.color-7{background:var(--color7-bg);border-left-color:var(--color7-accent)}
-.color-8{background:var(--color8-bg);border-left-color:var(--color8-accent)}
-.color-9{background:var(--color9-bg);border-left-color:var(--color9-accent)}
-.color-10{background:var(--color10-bg);border-left-color:var(--color10-accent)}
-.color-11{background:var(--color11-bg);border-left-color:var(--color11-accent)}
-.color-12{background:var(--color12-bg);border-left-color:var(--color12-accent)}
-.color-13{background:var(--color13-bg);border-left-color:var(--color13-accent)}
-.color-14{background:var(--color14-bg);border-left-color:var(--color14-accent)}
-.color-15{background:var(--color15-bg);border-left-color:var(--color15-accent)}
-.color-16{background:var(--color16-bg);border-left-color:var(--color16-accent)}
-.color-17{background:var(--color17-bg);border-left-color:var(--color17-accent)}
-.color-18{background:var(--color18-bg);border-left-color:var(--color18-accent)}
-.color-19{background:var(--color19-bg);border-left-color:var(--color19-accent)}
-.color-20{background:var(--color20-bg);border-left-color:var(--color20-accent)}
-
+"+ "
+".join([f".color-{i}{{background:var(--c{i});border-left-color:var(--a{i})}}" for i in range(1,21)]) +"
 .thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:1em}
 .thumb{width:120px}
-.thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;
-  box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
+.thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
 .thumb img:hover{transform:scale(1.05)}
 .caption{font-size:.8rem;margin-top:.3em;text-align:center}
-
-/* —— footer —— */
+.load-more{display:block;margin:2em auto;padding:.6em 1.4em;border:none;cursor:pointer;background:var(--btn);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.9rem}
+.load-more:hover{background:var(--btn-hover)}
 footer{text-align:center;padding:2em;background:var(--frame);color:#fff;font-size:.9rem}
-a{color:var(--color10-bg);text-decoration:none}
-a:hover{text-decoration:underline}
+footer a{color:var(--c10);text-decoration:none}
+footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
-
-<header>
-  <img src="./512.png" alt="logo">
-</header>
-
+<header><img src="./512.png" alt="logo"></header>
 <div id="filters">
   <button onclick="filterBy('All')">All</button>
   <button onclick="filterBy('Linocut')">Linocut</button>
@@ -119,9 +54,8 @@ a:hover{text-decoration:underline}
   <button onclick="filterBy('Digital')">Digital</button>
   <button onclick="filterBy('Drypoint')">Drypoint</button>
 </div>
-
 <section class="section" id="series-container"></section>
-
+<button id="moreBtn" class="load-more" style="display:none" onclick="loadMore()">Load more</button>
 <footer>
   <p>a synthesis of mid‑century modern minimalism & vintage matchbox print aesthetics</p>
   <p>Contact: <a href="mailto:vadym@example.com">vadym@example.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
@@ -130,25 +64,14 @@ a:hover{text-decoration:underline}
 
 <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 <script>
+const SERIES_PER_BATCH=6;let allSeries=[],rendered=0,currentFilter='All';
+function thumb(u){return u.replace(/\.(jpe?g|png|webp)$/i,'l.$1')}
 function openLightbox(u){basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show()}
-function renderSeries(f='All'){
-  const c=document.getElementById('series-container');c.innerHTML='';
-  fetch('works.json').then(r=>r.json()).then(d=>{
-    d.forEach(s=>{
-      if(f==='All'||(s.media&&s.media.toLowerCase().includes(f.toLowerCase()))){
-        const b=document.createElement('div');
-        b.className=`series-block color-${s.color}`;
-        b.innerHTML=`<h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p>
-          <div class='thumbs'>${s.images.map(img=>`<div class='thumb'>
-            <img src='${img.url}' loading='lazy' onclick='openLightbox(\"${img.url}\")'>
-            <p class='caption'>${img.title} (${img.year})</p></div>`).join('')}</div>`;
-        c.appendChild(b);
-      }
-    });
-  });
-}
-function filterBy(t){renderSeries(t)}
-renderSeries();
+function buildBlock(s){return `<div class='series-block color-${s.color}'><h2>${s.title}</h2><p>${s.year} / ${s.media}</p><p>${s.description}</p><div class='thumbs'>${s.images.map(i=>`<div class='thumb'><img src='${thumb(i.url)}' loading='lazy' onclick='openLightbox("${i.url}")'><p class='caption'>${i.title} (${i.year})</p></div>`).join('')}</div></div>`}
+function applyFilter(){const c=document.getElementById('series-container');c.innerHTML='';rendered=0;loadMore()}
+function loadMore(){const c=document.getElementById('series-container');let count=0;for(;rendered<allSeries.length&&count<SERIES_PER_BATCH;rendered++){const s=allSeries[rendered];if(currentFilter==='All'||(s.media&&s.media.toLowerCase().includes(currentFilter.toLowerCase()))){c.insertAdjacentHTML('beforeend',buildBlock(s));count++}}document.getElementById('moreBtn').style.display=rendered<allSeries.length?'block':'none'}
+function filterBy(t){currentFilter=t;applyFilter()}
+fetch('works.json').then(r=>r.json()).then(d=>{allSeries=d;applyFilter()})
 </script>
 </body>
 </html>
