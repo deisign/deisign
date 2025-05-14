@@ -442,5 +442,34 @@
     { "title": "Kostyantyn Karachun",                            "year": 2023, "url": "https://i.imgur.com/01vLRvj.jpg" }
   ],
   "color": 15
+},
+{
+  "title": "Uncategorised Works",
+  "year": "2019–2024",
+  "media": "digital",
+  "description": "Stand‑alone digital posters that don’t fit any specific series — eclectic snapshots of ideas in transit.",
+  "images": [
+    { "title": "Contact",              "year": 2019, "url": "https://i.imgur.com/WAmFfPC.jpg" },
+    { "title": "Samsara",              "year": 2019, "url": "https://i.imgur.com/XnyVYsF.jpg" },
+    { "title": "On the Bottom",        "year": 2019, "url": "https://i.imgur.com/CdUeFms.jpg" },
+    { "title": "Sangreal",             "year": 2019, "url": "https://i.imgur.com/yzlhJDe.jpg" },
+    { "title": "Jump They Say",        "year": 2019, "url": "https://i.imgur.com/9toOmKO.jpg" },
+    { "title": "Toy Story",            "year": 2019, "url": "https://i.imgur.com/OwTgiR4.jpg" },
+    { "title": "Hey Earthlings",       "year": 2019, "url": "https://i.imgur.com/5537vjG.jpg" },
+    { "title": "Bad Santa",            "year": 2019, "url": "https://i.imgur.com/QXa1K6C.jpg" },
+    { "title": "Hazel Mazel",          "year": 2019, "url": "https://i.imgur.com/YRrlQXc.jpg" },
+    { "title": "God's Force",          "year": 2019, "url": "https://i.imgur.com/KyXpJEC.jpg" },
+    { "title": "Threesome",            "year": 2019, "url": "https://i.imgur.com/pYDKW0I.jpg" },
+    { "title": "Ahoy!",                "year": 2020, "url": "https://i.imgur.com/agcY1oq.jpg" },
+    { "title": "Girl Power",           "year": 2020, "url": "https://i.imgur.com/PG3dcfP.jpg" },
+    { "title": "Objects in Mirror",    "year": 2020, "url": "https://i.imgur.com/08Ef3hL.jpg" },
+    { "title": "Dark Night",           "year": 2020, "url": "https://i.imgur.com/CS4bXpT.jpg" },
+    { "title": "Lullaby of Birdland",  "year": 2020, "url": "https://i.imgur.com/VaPS7FO.jpg" },
+    { "title": "Consumer’s Sanctuary", "year": 2021, "url": "https://i.imgur.com/HMXDCSx.jpg" },
+    { "title": "The Last Match",       "year": 2022, "url": "https://i.imgur.com/UG4uhwY.jpg" },
+    { "title": "Curfew",               "year": 2022, "url": "https://i.imgur.com/e8YmgNS.jpg" },
+    { "title": "Drive",                "year": 2024, "url": "https://i.imgur.com/VkKNjbK.jpg" }
+  ],
+  "color": 16
 }
 ]
