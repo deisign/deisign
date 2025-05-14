@@ -314,5 +314,33 @@
     { "title": "Jazz Blamed",              "year": 2022, "url": "https://i.imgur.com/XJorhx2.jpg" }
   ],
   "color": 9
+},
+  {
+  "title": "Pop Art Tarot Series",
+  "year": "2019–2024",
+  "media": "digital / markers",
+  "description": "Major‑arcana posters colliding bright Pop Art palettes with occult symbolism and bold typography.",
+  "images": [
+    { "title": "The Fool",           "year": 2020, "url": "https://i.imgur.com/Zrbv6sD.jpg" },
+    { "title": "The Magician",       "year": 2019, "url": "https://i.imgur.com/v0c3BTw.jpg" },
+    { "title": "The High Priestess", "year": 2020, "url": "https://i.imgur.com/aFuxiSb.jpg" },
+    { "title": "The Empress",        "year": 2020, "url": "https://i.imgur.com/UMc4PGa.jpg" },
+    { "title": "The Hierophant",     "year": 2019, "url": "https://i.imgur.com/0gR5b7f.jpg" },
+    { "title": "The Lovers",         "year": 2019, "url": "https://i.imgur.com/kIP0LPT.jpg" },
+    { "title": "The Chariot",        "year": 2019, "url": "https://i.imgur.com/ZvOrIVe.jpg" },
+    { "title": "The Hermit",         "year": 2020, "url": "https://i.imgur.com/6TYgSQX.jpg" },
+    { "title": "Wheel of Fortune",   "year": 2019, "url": "https://i.imgur.com/EXK2ORS.jpg" },
+    { "title": "The Devil",          "year": 2019, "url": "https://i.imgur.com/eYBrzXq.jpg" },
+    { "title": "The Hanged Man",     "year": 2020, "url": "https://i.imgur.com/rgcgiHF.jpg" },
+    { "title": "Death",              "year": 2019, "url": "https://i.imgur.com/Pr1IrAj.jpg" },
+    { "title": "Temperance",         "year": 2019, "url": "https://i.imgur.com/xW1rkbb.jpg" },
+    { "title": "The Tower",          "year": 2019, "url": "https://i.imgur.com/AcSXo8m.jpg" },
+    { "title": "Judgement",          "year": 2019, "url": "https://i.imgur.com/0t4O8X5.jpg" },
+    { "title": "The Star",           "year": 2019, "url": "https://i.imgur.com/EXn13Uy.jpg" },
+    { "title": "The Moon",           "year": 2019, "url": "https://i.imgur.com/7rjDC19.jpg" },
+    { "title": "The Universe",       "year": 2023, "url": "https://i.imgur.com/FNNQonE.jpg" },
+    { "title": "The Emperor",        "year": 2024, "url": "https://i.imgur.com/3DMV8vC.jpeg" }
+  ],
+  "color": 10
 }
 ]
