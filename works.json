@@ -214,5 +214,20 @@
     { "title": "Trimūrti",           "year": 2024, "url": "https://i.imgur.com/7HlUIoR.jpeg" }
   ],
   "color": 5
+},
+{
+  "title": "Modern Dreams Series",
+  "year": "2024–2025",
+  "media": "digital",
+  "description": "Chromatic road‑movie visions: neon highways, endless horizons and synth‑infused nostalgia rendered in crisp pixels.",
+  "images": [
+    { "title": "Autobahn",                "year": 2024, "url": "https://i.imgur.com/abOKWT7.jpeg" },
+    { "title": "The Long and Winding Road","year": 2024, "url": "https://i.imgur.com/oUfCwCf.jpeg" },
+    { "title": "Lighthouse",              "year": 2024, "url": "https://i.imgur.com/yrJknLz.jpeg" },
+    { "title": "One Two Trip",            "year": 2024, "url": "https://i.imgur.com/o22gEof.jpeg" },
+    { "title": "On The Road Again",       "year": 2024, "url": "https://i.imgur.com/v7ibLfY.jpeg" },
+    { "title": "Running Up That Hill",    "year": 2025, "url": "https://i.imgur.com/ZFfEshD.jpeg" }
+  ],
+  "color": 6
 }
 ]
