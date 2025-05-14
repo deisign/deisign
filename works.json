@@ -471,5 +471,30 @@
     { "title": "Drive",                "year": 2024, "url": "https://i.imgur.com/VkKNjbK.jpg" }
   ],
   "color": 16
+},
+{
+  "title": "Acrylic Works",
+  "year": "2024",
+  "media": "acrylic",
+  "description": "Stand‑alone acrylic canvases in saturated playback‑boogie tones.",
+  "images": [
+    { "title": "Playback", "year": 2024, "url": "https://i.imgur.com/2Fk9v7R.jpeg" },
+    { "title": "Boogie",   "year": 2024, "url": "https://i.imgur.com/eBMTvZO.jpeg" }
+  ],
+  "color": 17
+},
+{
+  "title": "Marker Works",
+  "year": "2024",
+  "media": "markers",
+  "description": "Expressive marker sketches: lunar moods, trapped figures and comic‑style heroes.",
+  "images": [
+    { "title": "Half Moon",   "year": 2024, "url": "https://i.imgur.com/OzOoVbU.jpeg" },
+    { "title": "Trapped",     "year": 2024, "url": "https://i.imgur.com/Hyeiha1.jpeg" },
+    { "title": "The Emperor", "year": 2024, "url": "https://i.imgur.com/3DMV8vC.jpeg" },
+    { "title": "Equilibrium", "year": 2024, "url": "https://i.imgur.com/lv6wXEf.jpeg" },
+    { "title": "Paw Patrol",  "year": 2024, "url": "https://i.imgur.com/rckx1Ez.jpeg" }
+  ],
+  "color": 18
 }
 ]
