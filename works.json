@@ -280,5 +280,22 @@
     { "title": "Goat, Cabbage and Wolf Problem","year": 2019,"url": "https://i.imgur.com/sZKgDzW.jpg" }
   ],
   "color": 7
+},
+{
+  "title": "Nature Vites Series",
+  "year": "2019–2022",
+  "media": "digital",
+  "description": "Dark botanical vignettes where pop‑culture slogans collide with withered blooms, ash and quiet menace.",
+  "images": [
+    { "title": "Mother's Little Helper",  "year": 2020, "url": "https://i.imgur.com/2D1SdlL.jpg" },
+    { "title": "Fire!",                  "year": 2019, "url": "https://i.imgur.com/IL3yaKN.jpg" },
+    { "title": "December",               "year": 2019, "url": "https://i.imgur.com/rXfrMfX.jpg" },
+    { "title": "Vanitas",                "year": 2020, "url": "https://i.imgur.com/mBxjwfc.jpg" },
+    { "title": "Shhhh",                  "year": 2020, "url": "https://i.imgur.com/SFfqHOy.jpg" },
+    { "title": "Mary",                   "year": 2020, "url": "https://i.imgur.com/hoYDWDy.jpg" },
+    { "title": "Champagne & Cigarettes", "year": 2022, "url": "https://i.imgur.com/bZLgN6F.jpg" },
+    { "title": "One Shot",               "year": 2022, "url": "https://i.imgur.com/nz7wEEK.jpg" }
+  ],
+  "color": 8
 }
 ]
