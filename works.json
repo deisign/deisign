@@ -423,5 +423,24 @@
     { "title": "Amphibian Man — Ether",              "year": 2025, "url": "https://i.imgur.com/1xEsKCn.jpeg" }
   ],
   "color": 14
+},
+{
+  "title": "Gig Posters Series",
+  "year": "2022–2023",
+  "media": "digital",
+  "description": "Concert one‑sheets soaked in garage grit, surf feedback and jangly jazz — riso‑tinged noise for the eyes.",
+  "images": [
+    { "title": "StrayTones",                                     "year": 2022, "url": "https://i.imgur.com/i2ovuGD.jpg" },
+    { "title": "Ukrabilly New Year",                             "year": 2022, "url": "https://i.imgur.com/QEDTdVF.jpg" },
+    { "title": "KAT / –YCH / Pleroma",                           "year": 2023, "url": "https://i.imgur.com/TbQvNxL.jpg" },
+    { "title": "Jazzy Girls",                                    "year": 2023, "url": "https://i.imgur.com/9VwPheK.jpg" },
+    { "title": "SPTP · Kraken Landau · Amphibian Man",           "year": 2023, "url": "https://i.imgur.com/DNYoO9H.jpg" },
+    { "title": "Vykroutas · Lybid_1 · The Cow · Harmatna",       "year": 2023, "url": "https://i.imgur.com/jqoZ06I.jpg" },
+    { "title": "Beats from the Crypt",                           "year": 2023, "url": "https://i.imgur.com/5XNsH5b.jpg" },
+    { "title": "Max Paragraph",                                  "year": 2023, "url": "https://i.imgur.com/BDfYENr.jpg" },
+    { "title": "Vinyl Sunday #3",                                "year": 2023, "url": "https://i.imgur.com/rx704Ur.jpg" },
+    { "title": "Kostyantyn Karachun",                            "year": 2023, "url": "https://i.imgur.com/01vLRvj.jpg" }
+  ],
+  "color": 15
 }
 ]
