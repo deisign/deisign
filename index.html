@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               img-src 'self' https: data:;
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               connect-src 'self';
+               frame-ancestors 'none'">
 <title>Vadym Antonyuk — Portfolio</title>
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
@@ -145,29 +152,19 @@ function filterBy(tech){
   loadMore();
 }
 
+<script>
 /* ── первый вызов ── */
 fetch('works.json')
   .then(r => r.json())
   .then(data => {
-    // Универсальная нормализация: чтобы старый шаблон не ломался,
-    // а новые (Cloudflare) тоже работали.
-    const normImg = (img = {}) => {
-      const u = img.url || img.image || img.cover || img.thumb || img.src || '';
-      return {
-        ...img,
-        url:   img.url   ?? u,   // для <a href>
-        image: img.image ?? u,   // для <img src>
-        cover: img.cover ?? u,   // если где-то ожидался cover
-        thumb: img.thumb ?? u,   // если шаблон подставляет thumbnail
-        src:   img.src   ?? u    // если в разметке используется data-src/src
-      };
+    const norm = (img = {}) => {
+      const u = img.url || img.image || '';
+      return { ...img, url: img.url ?? u, image: img.image ?? u };
     };
-
-    allSeries = (Array.isArray(data) ? data : []).map(series => ({
-      ...series,
-      images: Array.isArray(series.images) ? series.images.map(normImg) : []
+    allSeries = (Array.isArray(data) ? data : []).map(s => ({
+      ...s,
+      images: Array.isArray(s.images) ? s.images.map(norm) : []
     }));
-
     loadMore();
   });
 </script>
