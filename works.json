@@ -5,10 +5,18 @@
   "media": "markers",
   "description": "Minimal forms, fragile textures — an anatomy of nostalgia.",
   "images": [
-    { "title": "Memory",                "year": 2025, "url": "https://cdn.deisign.me/saudade/Memory.jpg" },
+    { "title": "Memory", "year": 2025, "url": "https://cdn.deisign.me/saudade/Memory.jpg" },
     { "title": "Countdown",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Countdown.jpg" },
     { "title": "Reflection",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Reflection.jpg" },
     { "title": "Waning Crescent",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Waning%20Crescent.jpg" },
+    { "title": "Out of Sand",  "year": 2025, "url": "https://cdn.deisign.me/saudade/outofsand.jpg" },
+    { "title": "Time",  "year": 2025, "url": "https://cdn.deisign.me/saudade/time.jpg" },
+    { "title": "Got Light? / Blackout",  "year": 2025, "url": "https://cdn.deisign.me/saudade/gotlight.jpg" },
+    { "title": "Still Light",  "year": 2025, "url": "https://cdn.deisign.me/saudade/wait.jpg" },
+    { "title": "Exitless",  "year": 2025, "url": "https://cdn.deisign.me/saudade/exitless.jpg" },
+    { "title": "Ashes",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Ashes.jpg" },
+    { "title": "Threshold",  "year": 2025, "url": "https://cdn.deisign.me/saudade/threshhold.jpg" },
+    { "title": "Leave / СЗЧ",  "year": 2025, "url": "https://cdn.deisign.me/saudade/leave.jpg" }
   ],
   "color": 20
 },
