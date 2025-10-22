@@ -149,7 +149,17 @@ function filterBy(tech){
 fetch('works.json')
   .then(r => r.json())
   .then(data => {
-    allSeries = data;
+    // Совместимость: у старых серий превью в img.image, у новых — в img.url.
+    // Делаем алиас, чтобы шаблон всегда читал img.image для <img src>.
+    allSeries = (data || []).map(series => ({
+      ...series,
+      images: (series.images || []).map(img => ({
+        ...img,
+        image: img.image || img.url,  // <img src=...> возьмёт это
+        url:   img.url   || img.image // <a href=...> по клику
+      }))
+    }));
+
     loadMore();
   });
 </script>
