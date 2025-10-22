@@ -4,7 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Security-Policy"
-      content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+      content="default-src 'self';
+               img-src 'self' https: data:;
+               connect-src 'self' https: data:;
+               script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
+               style-src 'self' 'unsafe-inline';
+               object-src 'none';
+               base-uri 'self';
+               frame-ancestors 'none'">
 <title>Vadym Antonyuk — Portfolio</title>
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
@@ -148,24 +155,61 @@ function filterBy(tech){
 }
 
 <script>
-fetch('works.json')
+/* ── загрузка данных ── */
+fetch('./works.json', { cache: 'no-store' })
   .then(r => {
-    if (!r.ok) throw new Error('Fetch error: ' + r.status);
+    if (!r.ok) throw new Error('Fetch failed: ' + r.status);
     return r.json();
   })
   .then(data => {
-    console.log('✅ works.json loaded', data); // проверка в консоли
-    const norm = (img = {}) => {
-      const u = img.url || img.image || '';
-      return { ...img, url: img.url ?? u, image: img.image ?? u };
+    // 1) Нормализация: новые картинки с Cloudflare идут в img.url,
+    //    старые с Imgur — в img.image. Делаем алиас, ничего не ломая.
+    const normImg = (img = {}) => {
+      const u = img.url || img.image || img.cover || img.src || '';
+      return {
+        ...img,
+        url:   img.url   ?? u,   // <a href>
+        image: img.image ?? u,   // <img src>
+        src:   img.src   ?? u    // если где-то используется data-src/src
+      };
     };
+
     window.allSeries = (Array.isArray(data) ? data : []).map(s => ({
       ...s,
-      images: Array.isArray(s.images) ? s.images.map(norm) : []
+      images: Array.isArray(s.images) ? s.images.map(normImg) : []
     }));
-    loadMore();
+
+    // 2) Основной рендер твоего шаблона
+    if (typeof loadMore === 'function') {
+      loadMore();
+      return;
+    }
+
+    // 3) «План Б» (если по какой-то причине loadMore не определён):
+    //    минимальный рендер, чтобы ты сразу увидел контент
+    console.warn('loadMore() отсутствует — включаю резервный рендер');
+    const $wrap = document.getElementById('series-container');
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    $wrap.innerHTML = window.allSeries.map(series => `
+      <article class="series">
+        <h2>${esc(series.title || '')}</h2>
+        <p>${esc(series.year || '')}${series.media ? ' / ' + esc(series.media) : ''}</p>
+        ${series.description ? `<p>${esc(series.description)}</p>` : ''}
+        <div class="grid">
+          ${(series.images || []).map(img => `
+            <a href="${esc(img.url)}" target="_blank" rel="noopener">
+              <img src="${esc(img.image)}" alt="${esc(img.title || '')}" loading="lazy" style="max-width:140px;height:auto;">
+            </a>
+          `).join('')}
+        </div>
+      </article>
+    `).join('');
   })
-  .catch(e => console.error('❌ JSON load failed:', e));
+  .catch(err => {
+    console.error('❌ works.json load error:', err);
+    const el = document.getElementById('series-container');
+    if (el) el.textContent = 'Failed to load works.json';
+  });
 </script>
 
 </body>
