@@ -10,7 +10,8 @@
                img-src 'self' https: data:;
                connect-src 'self' https: data:;
                script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
-               style-src 'self' 'unsafe-inline';
+               style-src  'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+               font-src   'self' data: https://fonts.gstatic.com;
                object-src 'none';
                base-uri 'self';
                frame-ancestors 'none'">
@@ -19,7 +20,7 @@
 
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script>
   if(location.hostname.startsWith('www.')) location.href = location.href.replace('www.','');
 </script>
@@ -184,6 +185,7 @@ function filterBy(tech){
 </script> <!-- ВАЖНО: закрываем этот <script> перед fetch -->
 
 <script>
+console.log('INIT scripts OK');
 /* ── загрузка данных ── */
 fetch('./works.json', { cache: 'no-store' })
   .then(r => {
