@@ -149,15 +149,23 @@ function filterBy(tech){
 fetch('works.json')
   .then(r => r.json())
   .then(data => {
-    // Совместимость: у старых серий превью в img.image, у новых — в img.url.
-    // Делаем алиас, чтобы шаблон всегда читал img.image для <img src>.
-    allSeries = (data || []).map(series => ({
-      ...series,
-      images: (series.images || []).map(img => ({
+    // Универсальная нормализация: чтобы старый шаблон не ломался,
+    // а новые (Cloudflare) тоже работали.
+    const normImg = (img = {}) => {
+      const u = img.url || img.image || img.cover || img.thumb || img.src || '';
+      return {
         ...img,
-        image: img.image || img.url,  // <img src=...> возьмёт это
-        url:   img.url   || img.image // <a href=...> по клику
-      }))
+        url:   img.url   ?? u,   // для <a href>
+        image: img.image ?? u,   // для <img src>
+        cover: img.cover ?? u,   // если где-то ожидался cover
+        thumb: img.thumb ?? u,   // если шаблон подставляет thumbnail
+        src:   img.src   ?? u    // если в разметке используется data-src/src
+      };
+    };
+
+    allSeries = (Array.isArray(data) ? data : []).map(series => ({
+      ...series,
+      images: Array.isArray(series.images) ? series.images.map(normImg) : []
     }));
 
     loadMore();
