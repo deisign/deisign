@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- CSP: разрешаем fetch, jsDelivr и любые https-изображения -->
 <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
                img-src 'self' https: data:;
@@ -12,13 +14,20 @@
                object-src 'none';
                base-uri 'self';
                frame-ancestors 'none'">
+
 <title>Vadym Antonyuk — Portfolio</title>
+
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-<script>if(location.hostname.startsWith('www.')) location.href=location.href.replace('www.','');</script>
+
+<script>
+  if(location.hostname.startsWith('www.')) location.href = location.href.replace('www.','');
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://i.imgur.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+
 <style>
 /* paper background */
 :root{
@@ -26,7 +35,7 @@
   --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   --frame:#111;
   --btn:#3A6EA5; --btn-hover:#F7B801;
-  /* 20‑colour palette */
+  /* 20-colour palette */
   --c1:#3A6EA5;  --a1:#F7B801;
   --c2:#DB4F3D;  --a2:#F5F0E6;
   --c3:#597E52;  --a3:#F7B801;
@@ -89,7 +98,9 @@ footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
+
 <header><img src="./512.png" alt="logo"></header>
+
 <div id="filters">
   <button onclick="filterBy('All')">All</button>
   <button onclick="filterBy('Linocut')">Linocut</button>
@@ -98,19 +109,36 @@ footer a:hover{text-decoration:underline}
   <button onclick="filterBy('Digital')">Digital</button>
   <button onclick="filterBy('Drypoint')">Drypoint</button>
 </div>
+
 <section class="section" id="series-container"></section>
 <button id="moreBtn" class="load-more" style="display:none" onclick="loadMore()">Load more</button>
+
 <footer>
-  <p>a synthesis of mid‑century modern minimalism & vintage matchbox print aesthetics</p>
+  <p>a synthesis of mid-century modern minimalism & vintage matchbox print aesthetics</p>
   <p>Contact: <a href="mailto:deisign@gmail.com">deisign@gmail.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
   <p>MMXIX—MMXXV DeiSign fecit </p>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+
 <script>
+/* ===== helpers & state ===== */
 const BATCH = 6;                 // сколько серий показываем за подгрузку
 let allSeries = [], rendered = 0, currentFilter = 'All';
 
-function thumb(u){ return u.replace(/\.(jpe?g|png|webp)$/i, 'l.$1'); }
+/* Imgur thumbnails имеют суффикс l: *.jpg -> *l.jpg. Для Cloudflare ничего не меняем */
+function thumb(u){
+  try {
+    const url = new URL(u);
+    if (url.hostname.endsWith('i.imgur.com')) {
+      return u.replace(/\.(jpe?g|png|webp)$/i, 'l.$1');
+    }
+    return u; // для cdn.deisign.me и прочих — исходный URL
+  } catch(e) {
+    return u;
+  }
+}
+
 function openLight(u){
   basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show();
 }
@@ -123,7 +151,7 @@ function makeBlock(s){
     <div class="thumbs">
       ${s.images.map(i => `
         <div class="thumb">
-          <img src="${thumb(i.url)}" loading="lazy" onclick="openLight('${i.url}')">
+          <img src="${thumb(i.image || i.url)}" loading="lazy" onclick="openLight('${i.url || i.image}')">
           <p class="caption">${i.title} (${i.year})</p>
         </div>`).join('')}
     </div>
@@ -153,6 +181,7 @@ function filterBy(tech){
   document.getElementById('series-container').innerHTML = '';
   loadMore();
 }
+</script> <!-- ВАЖНО: закрываем этот <script> перед fetch -->
 
 <script>
 /* ── загрузка данных ── */
@@ -162,15 +191,13 @@ fetch('./works.json', { cache: 'no-store' })
     return r.json();
   })
   .then(data => {
-    // 1) Нормализация: новые картинки с Cloudflare идут в img.url,
-    //    старые с Imgur — в img.image. Делаем алиас, ничего не ломая.
+    // Нормализация: новые (Cloudflare) используют url, старые (Imgur) — image
     const normImg = (img = {}) => {
       const u = img.url || img.image || img.cover || img.src || '';
       return {
         ...img,
-        url:   img.url   ?? u,   // <a href>
-        image: img.image ?? u,   // <img src>
-        src:   img.src   ?? u    // если где-то используется data-src/src
+        url:   img.url   ?? u,   // для <a href>
+        image: img.image ?? u    // для <img src>
       };
     };
 
@@ -179,31 +206,7 @@ fetch('./works.json', { cache: 'no-store' })
       images: Array.isArray(s.images) ? s.images.map(normImg) : []
     }));
 
-    // 2) Основной рендер твоего шаблона
-    if (typeof loadMore === 'function') {
-      loadMore();
-      return;
-    }
-
-    // 3) «План Б» (если по какой-то причине loadMore не определён):
-    //    минимальный рендер, чтобы ты сразу увидел контент
-    console.warn('loadMore() отсутствует — включаю резервный рендер');
-    const $wrap = document.getElementById('series-container');
-    const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-    $wrap.innerHTML = window.allSeries.map(series => `
-      <article class="series">
-        <h2>${esc(series.title || '')}</h2>
-        <p>${esc(series.year || '')}${series.media ? ' / ' + esc(series.media) : ''}</p>
-        ${series.description ? `<p>${esc(series.description)}</p>` : ''}
-        <div class="grid">
-          ${(series.images || []).map(img => `
-            <a href="${esc(img.url)}" target="_blank" rel="noopener">
-              <img src="${esc(img.image)}" alt="${esc(img.title || '')}" loading="lazy" style="max-width:140px;height:auto;">
-            </a>
-          `).join('')}
-        </div>
-      </article>
-    `).join('');
+    loadMore();
   })
   .catch(err => {
     console.error('❌ works.json load error:', err);
