@@ -1,5 +1,18 @@
 [
   {
+  "title": "Saudade Series",
+  "year": "2025",
+  "media": "markers",
+  "description": "Minimal forms, fragile textures — an anatomy of nostalgia.",
+  "images": [
+    { "title": "Memory",                "year": 2025, "url": "https://cdn.deisign.me/saudade/Memory.jpg" },
+    { "title": "Countdown",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Countdown.jpg" },
+    { "title": "Reflection",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Reflection.jpg" },
+    { "title": "Waning Crescent",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Waning%20Crescent.jpg" },
+  ],
+  "color": 20
+},
+  {
   "title": "Soul Bass Series",
   "year": "2025",
   "media": "digital",
