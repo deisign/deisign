@@ -26,8 +26,8 @@
   "media": "digital",
   "description": "Minimal silhouettes, pure Saul Bass vibe.",
   "images": [
-    { "title": "Nobody Home",                "year": 2025, "url": "https://i.imgur.com/f7g5uBZ.jpeg" },
-    { "title": "Turn Your Lights Down Low",  "year": 2025, "url": "https://i.imgur.com/l1dzbDG.jpeg" }
+    { "title": "Nobody Home",                "year": 2025, "url": "https://cdn.deisign.me/Soul%20Bass/Nobody%20Home.jpeg" },
+    { "title": "Turn Your Lights Down Low",  "year": 2025, "url": "https://cdn.deisign.me/Soul%20Bass/Turn%20Your%20Lights%20Down%20Low.jpeg" }
   ],
   "color": 19
 },
