@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- CSP: разрешаем fetch, jsDelivr и любые https-изображения -->
+<!-- CSP: разрешаем jsDelivr, Google Fonts, fetch и любые https-картинки -->
 <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
                img-src 'self' https: data:;
@@ -13,30 +13,25 @@
                style-src  'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
                font-src   'self' data: https://fonts.gstatic.com;
                object-src 'none';
-               base-uri 'self';
-               frame-ancestors 'none'">
+               base-uri 'self'">
 
 <title>Vadym Antonyuk — Portfolio</title>
 
 <link rel="icon" href="./32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./512.png">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script>
-  if(location.hostname.startsWith('www.')) location.href = location.href.replace('www.','');
-</script>
+<script>if(location.hostname.startsWith('www.')) location.href=location.href.replace('www.','');</script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://i.imgur.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
 
 <style>
-/* paper background */
 :root{
   --paper-bg:#f5f0e6;
   --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   --frame:#111;
   --btn:#3A6EA5; --btn-hover:#F7B801;
-  /* 20-colour palette */
   --c1:#3A6EA5;  --a1:#F7B801;
   --c2:#DB4F3D;  --a2:#F5F0E6;
   --c3:#597E52;  --a3:#F7B801;
@@ -124,20 +119,17 @@ footer a:hover{text-decoration:underline}
 
 <script>
 /* ===== helpers & state ===== */
-const BATCH = 6;                 // сколько серий показываем за подгрузку
+const BATCH = 6;
 let allSeries = [], rendered = 0, currentFilter = 'All';
 
-/* Imgur thumbnails имеют суффикс l: *.jpg -> *l.jpg. Для Cloudflare ничего не меняем */
+/* превью: миниатюры делаем только для i.imgur.com; Cloudflare — исходный URL */
 function thumb(u){
   try {
-    const url = new URL(u);
-    if (url.hostname.endsWith('i.imgur.com')) {
-      return u.replace(/\.(jpe?g|png|webp)$/i, 'l.$1');
-    }
-    return u; // для cdn.deisign.me и прочих — исходный URL
-  } catch(e) {
-    return u;
-  }
+    const h = new URL(u).hostname;
+    return h.endsWith('i.imgur.com')
+      ? u.replace(/\.(jpe?g|png|webp)$/i, 'l.$1')
+      : u;
+  } catch { return u; }
 }
 
 function openLight(u){
@@ -159,7 +151,7 @@ function makeBlock(s){
   </div>`;
 }
 
-/* ── подгружаем партиями ── */
+/* подгружаем партиями */
 function loadMore(){
   const box = document.getElementById('series-container');
   let added = 0;
@@ -175,35 +167,31 @@ function loadMore(){
         rendered < allSeries.length ? 'block' : 'none';
 }
 
-/* ── фильтр по технике ── */
+/* фильтр по технике */
 function filterBy(tech){
   currentFilter = tech;
   rendered = 0;
   document.getElementById('series-container').innerHTML = '';
   loadMore();
 }
-</script> <!-- ВАЖНО: закрываем этот <script> перед fetch -->
+</script> <!-- закрываем блок функций -->
 
 <script>
+/* ── загрузка данных, нормализация и запуск рендера ── */
 console.log('INIT scripts OK');
-/* ── загрузка данных ── */
+
 fetch('./works.json', { cache: 'no-store' })
   .then(r => {
     if (!r.ok) throw new Error('Fetch failed: ' + r.status);
     return r.json();
   })
   .then(data => {
-    // Нормализация: новые (Cloudflare) используют url, старые (Imgur) — image
     const normImg = (img = {}) => {
       const u = img.url || img.image || img.cover || img.src || '';
-      return {
-        ...img,
-        url:   img.url   ?? u,   // для <a href>
-        image: img.image ?? u    // для <img src>
-      };
+      return { ...img, url: img.url ?? u, image: img.image ?? u };
     };
 
-    window.allSeries = (Array.isArray(data) ? data : []).map(s => ({
+    allSeries = (Array.isArray(data) ? data : []).map(s => ({
       ...s,
       images: Array.isArray(s.images) ? s.images.map(normImg) : []
     }));
