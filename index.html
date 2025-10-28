@@ -4,36 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vadym Antonyuk — deisign.me</title>
-<meta name="description" content="Saudade, Materials of Observation, and other mid-century modern reconstructions by Vadym Antonyuk.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://deisign.me">
+<link rel="canonical" href="https://deisign.me" />
+<meta name="description" content="Portfolio of Vadym Antonyuk — series, linocuts, acrylic and digital works inspired by mid-century modern aesthetics.">
 <meta property="og:title" content="Vadym Antonyuk — deisign.me">
-<meta property="og:description" content="Imaginary modernist archives by Vadym Antonyuk.">
+<meta property="og:description" content="Imaginary modernist archives and visual series.">
 <meta property="og:image" content="https://deisign.me/preview.jpg">
 <meta property="og:url" content="https://deisign.me">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- CSP: разрешаем jsDelivr, Google Fonts, fetch и любые https-картинки -->
-<meta http-equiv="Content-Security-Policy"
-      content="default-src 'self';
-               img-src 'self' https: data:;
-               connect-src 'self' https: data:;
-               script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
-               style-src  'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
-               font-src   'self' data: https://fonts.gstatic.com;
-               object-src 'none';
-               base-uri 'self'">
-
-<title>Vadym Antonyuk — Portfolio</title>
-
-<link rel="icon" href="./32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="./512.png">
-<script>if(location.hostname.startsWith('www.')) location.href=location.href.replace('www.','');</script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
 
 <style>
 :root{
@@ -61,178 +38,100 @@
   --c18:#008491; --a18:#F9DC5C;
   --c19:#843B62; --a19:#FFBC42;
   --c20:#6A4C93; --a20:#F0F0F0;
-  --c21:#0F6A6A;  --a21:#F6E7C1; /* deep teal + warm cream */
-  --c22:#A65E2E;  --a22:#FFF1D6; /* burnt sienna + pale sand */
-  --c23:#6B8A3F;  --a23:#F4E4A1; /* moss + soft maize */
-  --c24:#3D405B;  --a24:#F2E9E4; /* muted indigo + porcelain */
-  --c25:#7A5C41;  --a25:#FBE7C6; /* walnut + buttercream */
-  --c26:#2B3A42;  --a26:#FFE8A3; /* gunmetal + mellow yellow */
-  --c27:#9A5A5A;  --a27:#FFF0E6; /* dusty rose-brown + peach veil */
-  --c28:#586E75;  --a28:#FFE6A7; /* blue slate + light ochre */
-  --c29:#8C6A2F;  --a29:#F8EDC2; /* ochre-brown + pale vanilla */
-  --c30:#2E5E4E;  --a30:#F3E9D2; /* pine + parchment */
-  --c31:#3C6E71;  --a31:#F8F3E3; /* teal gray + paper white warm */
-  --c32:#B85C38;  --a32:#FFF0DA; /* rust + cream */
-  --c33:#5F4B66;  --a33:#EAE4F2; /* eggplant gray + pale lilac */
-  --c34:#7D8F69;  --a34:#FFF1C1; /* sage + custard */
-  --c35:#1D3A7D;  --a35:#F1E9FF; /* deep royal + lavender mist */
-  --c36:#556B2F;  --a36:#F1E8B8; /* dark olive + hay */
-  --c37:#A68A64;  --a37:#1C1C1C; /* khaki tan + near-black (for text) */
-  --c38:#3F5E5A;  --a38:#FFECD1; /* deep sea + light apricot */
-  --c39:#924C2E;  --a39:#FFF2D5; /* clay + pastry cream */
-  --c40:#304C89;  --a40:#F7F4EA; /* denim + linen */
+  --c21:#0F6A6A;  --a21:#F6E7C1;
+  --c22:#A65E2E;  --a22:#FFF1D6;
+  --c23:#6B8A3F;  --a23:#F4E4A1;
+  --c24:#3D405B;  --a24:#F2E9E4;
+  --c25:#7A5C41;  --a25:#FBE7C6;
+  --c26:#2B3A42;  --a26:#FFE8A3;
+  --c27:#9A5A5A;  --a27:#FFF0E6;
+  --c28:#586E75;  --a28:#FFE6A7;
+  --c29:#8C6A2F;  --a29:#F8EDC2;
+  --c30:#2E5E4E;  --a30:#F3E9D2;
+  --c31:#3C6E71;  --a31:#F8F3E3;
+  --c32:#B85C38;  --a32:#FFF0DA;
+  --c33:#5F4B66;  --a33:#EAE4F2;
+  --c34:#7D8F69;  --a34:#FFF1C1;
+  --c35:#1D3A7D;  --a35:#F1E9FF;
+  --c36:#556B2F;  --a36:#F1E8B8;
+  --c37:#A68A64;  --a37:#1C1C1C;
+  --c38:#3F5E5A;  --a38:#FFECD1;
+  --c39:#924C2E;  --a39:#FFF2D5;
+  --c40:#304C89;  --a40:#F7F4EA;
 }
-body{margin:0;font-family:'Space Grotesk',sans-serif;background:var(--paper-bg) var(--paper-text) repeat fixed;color:#1d1d1d}
-header{display:flex;align-items:center;justify-content:center;height:100vh;background:var(--c2)}
-header img{width:256px;height:256px;filter:brightness(1.35);}
-#filters{text-align:center;padding:1em}
-#filters button{margin:4px 6px;padding:6px 12px;border:none;cursor:pointer;background:var(--btn);color:#fff;font-size:.9rem}
-#filters button:hover{background:var(--btn-hover)}
-.section{padding:4em 2em;max-width:960px;margin:0 auto}
-.series-block{padding:2em;margin-bottom:2em;color:#fff;border-left:8px solid}
-.color-1{background:var(--c1);border-left-color:var(--a1)}
-.color-2{background:var(--c2);border-left-color:var(--a2)}
-.color-3{background:var(--c3);border-left-color:var(--a3)}
-.color-4{background:var(--c4);border-left-color:var(--a4)}
-.color-5{background:var(--c5);border-left-color:var(--a5)}
-.color-6{background:var(--c6);border-left-color:var(--a6)}
-.color-7{background:var(--c7);border-left-color:var(--a7)}
-.color-8{background:var(--c8);border-left-color:var(--a8)}
-.color-9{background:var(--c9);border-left-color:var(--a9)}
-.color-10{background:var(--c10);border-left-color:var(--a10)}
-.color-11{background:var(--c11);border-left-color:var(--a11)}
-.color-12{background:var(--c12);border-left-color:var(--a12)}
-.color-13{background:var(--c13);border-left-color:var(--a13)}
-.color-14{background:var(--c14);border-left-color:var(--a14)}
-.color-15{background:var(--c15);border-left-color:var(--a15)}
-.color-16{background:var(--c16);border-left-color:var(--a16)}
-.color-17{background:var(--c17);border-left-color:var(--a17)}
-.color-18{background:var(--c18);border-left-color:var(--a18)}
-.color-19{background:var(--c19);border-left-color:var(--a19)}
-.color-20{background:var(--c20);border-left-color:var(--a20)}
-.thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:1em}
-.thumb{width:120px}
-.thumb img{width:100%;height:auto;cursor:pointer;border:2px solid #fff;box-shadow:2px 2px 6px rgba(0,0,0,.3);transition:transform .2s}
-.thumb img:hover{transform:scale(1.05)}
-.caption{font-size:.8rem;margin-top:.3em;text-align:center}
-.load-more{display:block;margin:2em auto;padding:.6em 1.4em;border:none;cursor:pointer;background:var(--btn);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.9rem}
-.load-more:hover{background:var(--btn-hover)}
-footer{text-align:center;padding:2em;background:var(--frame);color:#fff;font-size:.9rem}
-footer a{color:var(--c10);text-decoration:none}
-footer a:hover{text-decoration:underline}
+
+/* базовый стиль страницы */
+body{
+  margin:0; background:var(--paper-bg) var(--paper-text); color:#111;
+  font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+header{
+  background:#DB4F3D; color:#fff; padding:20px 24px;
+  font-size:22px; letter-spacing:.5px;
+}
+main{ max-width:1200px; margin:0 auto; padding:24px; }
+.series{
+  margin-bottom:60px;
+  --bg:var(--c1); --fg:var(--a1);
+  background:var(--bg);
+  color:var(--fg);
+  padding:16px 24px 32px;
+  border-left:6px solid var(--fg);
+  border-radius:8px;
+}
+.series h2{ margin:0 0 4px; font-size:26px; color:var(--fg); }
+.series .meta{ font-size:15px; opacity:.8; }
+.series .description{ margin:10px 0 20px; font-size:16px; max-width:640px; }
+.series .works{ display:flex; flex-wrap:wrap; gap:14px; }
+.series .work img{
+  display:block; width:180px; height:auto; border:3px solid #fff4; border-radius:4px;
+  box-shadow:0 1px 3px #0002; background:#eee;
+}
+.series .work p{
+  margin:4px 0 0; font-size:13px; color:var(--fg);
+}
 </style>
 </head>
+
 <body>
-
-<header><img src="./512.png" alt="logo"></header>
-
-<div id="filters">
-  <button onclick="filterBy('All')">All</button>
-  <button onclick="filterBy('Linocut')">Linocut</button>
-  <button onclick="filterBy('Markers')">Markers</button>
-  <button onclick="filterBy('Acrylic')">Acrylic</button>
-  <button onclick="filterBy('Digital')">Digital</button>
-  <button onclick="filterBy('Drypoint')">Drypoint</button>
-</div>
-
-<section class="section" id="series-container"></section>
-<button id="moreBtn" class="load-more" style="display:none" onclick="loadMore()">Load more</button>
-
-<footer>
-  <p>a synthesis of mid-century modern minimalism & vintage matchbox print aesthetics</p>
-  <p>Contact: <a href="mailto:deisign@gmail.com">deisign@gmail.com</a> • <a href="https://paypal.com/donate/?hosted_button_id=L97XZDZ3F3JTE">Support</a></p>
-  <p>MMXIX—MMXXV DeiSign fecit </p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+<header>Vadym Antonyuk — deisign.me</header>
+<main id="gallery"></main>
 
 <script>
-/* ===== helpers & state ===== */
-const BATCH = 6;
-let allSeries = [], rendered = 0, currentFilter = 'All';
-
-/* превью: миниатюры делаем только для i.imgur.com; Cloudflare — исходный URL */
-function thumb(u){
-  try {
-    const h = new URL(u).hostname;
-    return h.endsWith('i.imgur.com')
-      ? u.replace(/\.(jpe?g|png|webp)$/i, 'l.$1')
-      : u;
-  } catch { return u; }
-}
-
-function openLight(u){
-  basicLightbox.create(`<img src='${u}' style='max-width:90vw;max-height:90vh'>`).show();
-}
-
-function makeBlock(s){
-  return `<div class="series-block color-${s.color}">
-    <h2>${s.title}</h2>
-    <p>${s.year} / ${s.media}</p>
-    <p>${s.description}</p>
-    <div class="thumbs">
-      ${s.images.map(i => `
-        <div class="thumb">
-          <img src="${thumb(i.image || i.url)}" loading="lazy" onclick="openLight('${i.url || i.image}')">
-          <p class="caption">${i.title} (${i.year})</p>
-        </div>`).join('')}
-    </div>
-  </div>`;
-}
-
-/* подгружаем партиями */
-function loadMore(){
-  const box = document.getElementById('series-container');
-  let added = 0;
-  for (; rendered < allSeries.length && added < BATCH; rendered++){
-    const s = allSeries[rendered];
-    if (currentFilter === 'All' ||
-        (s.media && s.media.toLowerCase().includes(currentFilter.toLowerCase()))){
-      box.insertAdjacentHTML('beforeend', makeBlock(s));
-      added++;
-    }
-  }
-  document.getElementById('moreBtn').style.display =
-        rendered < allSeries.length ? 'block' : 'none';
-}
-
-/* фильтр по технике */
-function filterBy(tech){
-  currentFilter = tech;
-  rendered = 0;
-  document.getElementById('series-container').innerHTML = '';
-  loadMore();
-}
-</script> <!-- закрываем блок функций -->
-
-<script>
-/* ── загрузка данных, нормализация и запуск рендера ── */
-console.log('INIT scripts OK');
-
-fetch('./works.json', { cache: 'no-store' })
-  .then(r => {
-    if (!r.ok) throw new Error('Fetch failed: ' + r.status);
-    return r.json();
-  })
-  .then(data => {
-    const normImg = (img = {}) => {
-      const u = img.url || img.image || img.cover || img.src || '';
-      return { ...img, url: img.url ?? u, image: img.image ?? u };
-    };
-
-    allSeries = (Array.isArray(data) ? data : []).map(s => ({
-      ...s,
-      images: Array.isArray(s.images) ? s.images.map(normImg) : []
-    }));
-
-    loadMore();
-  })
-  .catch(err => {
-    console.error('❌ works.json load error:', err);
-    const el = document.getElementById('series-container');
-    if (el) el.textContent = 'Failed to load works.json';
+async function loadWorks(){
+  const res = await fetch('works.json');
+  const data = await res.json();
+  const container = document.getElementById('gallery');
+  data.forEach(series=>{
+    container.appendChild(renderSeries(series));
   });
-</script>
+}
 
+function applyPalette(el, idx){
+  const n = Math.min(Math.max(Number(idx)||1, 1), 40);
+  el.style.setProperty('--bg', `var(--c${n})`);
+  el.style.setProperty('--fg', `var(--a${n})`);
+}
+
+function renderSeries(item){
+  const section = document.createElement('section');
+  section.className = 'series';
+  applyPalette(section, item.color);
+  section.innerHTML = `
+    <h2>${item.title}</h2>
+    <p class="meta">${item.year} / ${item.media}</p>
+    <p class="description">${item.description}</p>
+    <div class="works">
+      ${item.images.map(img => `
+        <div class="work">
+          <img src="${img.url}" alt="${img.title}">
+          <p>${img.title} (${img.year})</p>
+        </div>`).join('')}
+    </div>`;
+  return section;
+}
+
+loadWorks();
+</script>
 </body>
 </html>
