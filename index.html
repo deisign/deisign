@@ -94,6 +94,15 @@ main{ max-width:1200px; margin:0 auto; padding:24px; }
 </head>
 
 <body>
+  <!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer" style="display:none">
+  <button class="lb-close" aria-label="Close (Esc)">✕</button>
+  <button class="lb-prev" aria-label="Previous (←)">←</button>
+  <img class="lb-img" alt="">
+  <button class="lb-next" aria-label="Next (→)">→</button>
+  <div class="lb-caption"></div>
+</div>
+
 <header>Vadym Antonyuk — deisign.me</header>
 <main id="gallery"></main>
 
