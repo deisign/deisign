@@ -12,6 +12,10 @@
 <meta property="og:url" content="https://deisign.me">
 <meta name="twitter:card" content="summary_large_image">
 
+<!-- Favicon (верни файлы в корень репо) -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/png" href="/favicon.png" sizes="32x32">
+
 <style>
 :root{
   --paper-bg:#f5f0e6;
@@ -83,6 +87,7 @@ main{ max-width:1200px; margin:0 auto; padding:24px; }
 .series .meta{ font-size:15px; opacity:.8; }
 .series .description{ margin:10px 0 20px; font-size:16px; max-width:640px; }
 .series .works{ display:flex; flex-wrap:wrap; gap:14px; }
+.series .work .thumb{ display:block; text-decoration:none; color:inherit; }
 .series .work img{
   display:block; width:180px; height:auto; border:3px solid #fff4; border-radius:4px;
   box-shadow:0 1px 3px #0002; background:#eee;
@@ -90,7 +95,29 @@ main{ max-width:1200px; margin:0 auto; padding:24px; }
 .series .work p{
   margin:4px 0 0; font-size:13px; color:var(--fg);
 }
-  /* ---- Lightbox ---- */
+
+/* Splash / заставка */
+#splash {
+  position: fixed; inset: 0;
+  background: var(--paper-bg) var(--paper-text);
+  display: grid; place-items: center;
+  z-index: 9999;
+  transition: opacity .35s ease;
+}
+#splash.hidden { opacity: 0; pointer-events: none; }
+
+/* Скелетон + фиксированное соотношение сторон */
+.skel { position: relative; overflow: hidden; background: #e8e4da; }
+.skel::after {
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(90deg, transparent, #ffffff55, transparent);
+  transform: translateX(-100%); animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer { to { transform: translateX(100%); } }
+.ratio-4-5 { aspect-ratio: 4 / 5; }
+
+/* ---- Lightbox ---- */
 .lightbox{
   position: fixed; inset:0; z-index: 9999;
   background: rgba(0,0,0,.86);
@@ -111,18 +138,25 @@ main{ max-width:1200px; margin:0 auto; padding:24px; }
   position:absolute; left:24px; right:24px; bottom:18px;
   color:#fff; text-align:center; font-size:14px; opacity:.9;
 }
-
 </style>
 </head>
 
 <body>
-  <!-- LIGHTBOX -->
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer" style="display:none">
   <button class="lb-close" aria-label="Close (Esc)">✕</button>
   <button class="lb-prev" aria-label="Previous (←)">←</button>
   <img class="lb-img" alt="">
   <button class="lb-next" aria-label="Next (→)">→</button>
   <div class="lb-caption"></div>
+</div>
+
+<!-- Splash -->
+<div id="splash">
+  <div style="text-align:center">
+    <div style="font-weight:700; letter-spacing:.04em">deisign.me</div>
+    <div style="opacity:.7">loading the archive…</div>
+  </div>
 </div>
 
 <header>Vadym Antonyuk — deisign.me</header>
@@ -133,9 +167,16 @@ async function loadWorks(){
   const res = await fetch('works.json');
   const data = await res.json();
   const container = document.getElementById('gallery');
+
+  const priorityImages = []; // первые превью для снятия splash
+
   data.forEach(series=>{
-    container.appendChild(renderSeries(series));
+    container.appendChild(renderSeries(series, priorityImages));
   });
+
+  initLazyLoad();
+  hideSplashWhenReady(priorityImages);
+  initLightbox();
 }
 
 function applyPalette(el, idx){
@@ -144,24 +185,185 @@ function applyPalette(el, idx){
   el.style.setProperty('--fg', `var(--a${n})`);
 }
 
-function renderSeries(item){
+function renderSeries(item, priorityImages){
   const section = document.createElement('section');
   section.className = 'series';
   applyPalette(section, item.color);
+  const works = (item.images||[]).map((img, i) => {
+    const full  = img.full || img.url;   // полноразмер
+    const thumb = img.thumb || img.url;  // превью
+    const prior = i < 2 ? 'data-priority="1"' : '';
+    const title = img.title || '';
+    const year  = img.year ? ` (${img.year})` : '';
+
+    return `
+      <div class="work">
+        <a href="${full}" class="thumb"
+           data-full="${full}"
+           data-title="${title.replace(/"/g,'&quot;')}"
+           data-year="${img.year || ''}"
+           data-series="${(item.title||'').replace(/"/g,'&quot;')}">
+          <div class="skel ratio-4-5">
+            <img data-src="${thumb}" alt="${title}" ${prior}>
+          </div>
+        </a>
+        <p>${title}${year}</p>
+      </div>`;
+  }).join('');
+
   section.innerHTML = `
     <h2>${item.title}</h2>
     <p class="meta">${item.year} / ${item.media}</p>
-    <p class="description">${item.description}</p>
-    <div class="works">
-      ${item.images.map(img => `
-        <div class="work">
-          <img src="${img.url}" alt="${img.title}">
-          <p>${img.title} (${img.year})</p>
-        </div>`).join('')}
-    </div>`;
+    <p class="description">${item.description||''}</p>
+    <div class="works">${works}</div>
+  `;
+
+  section.querySelectorAll('img[data-priority]').forEach(img => priorityImages.push(img));
   return section;
 }
 
+/* ===== Lazy load через IntersectionObserver ===== */
+function initLazyLoad(){
+  const imgs = document.querySelectorAll('img[data-src]');
+  if (!('IntersectionObserver' in window)) {
+    imgs.forEach(loadImgNow);
+    return;
+  }
+  const io = new IntersectionObserver((entries, obs)=>{
+    for (const e of entries){
+      if (e.isIntersecting){
+        loadImgNow(e.target);
+        obs.unobserve(e.target);
+      }
+    }
+  }, { rootMargin: '250px 0px' });
+  imgs.forEach(img => io.observe(img));
+}
+
+function loadImgNow(img){
+  const src = img.getAttribute('data-src');
+  if (!src) return;
+  const onDone = ()=>{
+    const wrap = img.closest('.skel');
+    if (wrap) { wrap.classList.remove('skel'); wrap.style.background='none'; }
+    img.removeAttribute('data-src');
+  };
+  img.addEventListener('load', onDone, { once:true });
+  img.addEventListener('error', onDone, { once:true });
+  img.src = src;
+}
+
+/* ===== Splash: скрыть, когда первые изображения готовы или по таймауту ===== */
+function hideSplashWhenReady(priorityImgs){
+  const splash = document.getElementById('splash');
+  if (!splash) return;
+
+  const MIN_SHOW_MS = 350;
+  const TIMEOUT_MS = 4000;
+  const start = performance.now();
+
+  if (!priorityImgs.length){
+    return setTimeout(()=> splash.classList.add('hidden'), 600);
+  }
+
+  let ready = 0;
+  const check = ()=>{
+    if (++ready >= priorityImgs.length){
+      const delay = Math.max(0, MIN_SHOW_MS - (performance.now() - start));
+      setTimeout(()=> splash.classList.add('hidden'), delay);
+    }
+  };
+
+  priorityImgs.forEach(img=>{
+    if (img.complete) { check(); return; }
+    img.addEventListener('load', check, { once:true });
+    img.addEventListener('error', check, { once:true });
+    if (img.dataset.src && !img.src) loadImgNow(img);
+  });
+
+  setTimeout(()=> splash.classList.add('hidden'), TIMEOUT_MS);
+}
+
+/* ===== Лайтбокс ===== */
+let LB = { root:null, img:null, cap:null, btnPrev:null, btnNext:null, btnClose:null, list:[], idx:-1 };
+
+function initLightbox(){
+  LB.root = document.getElementById('lightbox');
+  LB.img  = LB.root.querySelector('.lb-img');
+  LB.cap  = LB.root.querySelector('.lb-caption');
+  LB.btnPrev = LB.root.querySelector('.lb-prev');
+  LB.btnNext = LB.root.querySelector('.lb-next');
+  LB.btnClose= LB.root.querySelector('.lb-close');
+
+  document.addEventListener('click', (e)=>{
+    const a = e.target.closest('a.thumb');
+    if (!a) return;
+    e.preventDefault();
+    const series = a.getAttribute('data-series') || '';
+    LB.list = [...document.querySelectorAll(`a.thumb[data-series="${CSS.escape(series)}"]`)];
+    LB.idx  = LB.list.indexOf(a);
+    if (LB.idx < 0) LB.idx = 0;
+    openLightboxByIndex(LB.idx);
+  });
+
+  LB.btnClose.addEventListener('click', closeLightbox);
+  LB.btnNext .addEventListener('click', nextLightbox);
+  LB.btnPrev .addEventListener('click', prevLightbox);
+  LB.root.addEventListener('click', (e)=>{ if (e.target === LB.root) closeLightbox(); });
+
+  window.addEventListener('keydown', (e)=>{
+    if (!LB.root.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextLightbox();
+    if (e.key === 'ArrowLeft')  prevLightbox();
+  });
+}
+
+function openLightboxByIndex(i){
+  LB.idx = (i + LB.list.length) % LB.list.length;
+  const a = LB.list[LB.idx];
+  if (!a) return;
+
+  const full = a.getAttribute('data-full');
+  const title= a.getAttribute('data-title') || '';
+  const year = a.getAttribute('data-year');
+  const caption = title + (year ? ` (${year})` : '');
+
+  LB.img.src = '';
+  LB.img.alt = title;
+  LB.cap.textContent = caption;
+
+  const pic = new Image();
+  pic.onload = ()=>{ LB.img.src = pic.src; };
+  pic.onerror = ()=>{ LB.img.src = full; };
+  pic.src = full;
+
+  LB.root.style.display = 'flex';
+  requestAnimationFrame(()=> LB.root.classList.add('open'));
+  document.documentElement.style.overflow = 'hidden';
+
+  preloadNeighbor(+1);
+  preloadNeighbor(-1);
+}
+
+function closeLightbox(){
+  LB.root.classList.remove('open');
+  setTimeout(()=> { LB.root.style.display='none'; }, 180);
+  document.documentElement.style.overflow = '';
+}
+
+function nextLightbox(){ openLightboxByIndex(LB.idx+1); }
+function prevLightbox(){ openLightboxByIndex(LB.idx-1); }
+
+function preloadNeighbor(step){
+  const j = (LB.idx + step + LB.list.length) % LB.list.length;
+  const a = LB.list[j];
+  if (!a) return;
+  const src = a.getAttribute('data-full');
+  const im = new Image(); im.src = src;
+}
+
+/* старт */
 loadWorks();
 </script>
 </body>
