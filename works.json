@@ -1,5 +1,17 @@
 [
   {
+  "title": "Polski Plakat Series",
+  "year": "2025",
+  "media": "markers",
+  "description": "Deconstructed signs, fading words — echoes of the Polish poster reborn in black.",
+  "images": [
+    { "title": "1984", "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/1984.jpg" },
+    { "title": "Głos Ciszy",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/glos_ciszy.jpg" }
+   
+  ],
+  "color": 21
+},
+  {
   "title": "Saudade Series",
   "year": "2025",
   "media": "markers",
