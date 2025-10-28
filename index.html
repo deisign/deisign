@@ -90,6 +90,28 @@ main{ max-width:1200px; margin:0 auto; padding:24px; }
 .series .work p{
   margin:4px 0 0; font-size:13px; color:var(--fg);
 }
+  /* ---- Lightbox ---- */
+.lightbox{
+  position: fixed; inset:0; z-index: 9999;
+  background: rgba(0,0,0,.86);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none; transition:.2s ease;
+}
+.lightbox.open{ opacity:1; pointer-events:auto; }
+.lightbox .lb-img{ max-width: min(92vw, 1600px); max-height: 92vh; display:block; }
+.lightbox .lb-close,.lightbox .lb-prev,.lightbox .lb-next{
+  position:absolute; top:50%; transform:translateY(-50%);
+  background: rgba(0,0,0,.5); border:1px solid #fff3; color:#fff;
+  padding:10px 14px; border-radius:8px; cursor:pointer; user-select:none;
+}
+.lightbox .lb-close{ top:22px; right:22px; transform:none; }
+.lightbox .lb-prev{ left:22px; }
+.lightbox .lb-next{ right:22px; }
+.lightbox .lb-caption{
+  position:absolute; left:24px; right:24px; bottom:18px;
+  color:#fff; text-align:center; font-size:14px; opacity:.9;
+}
+
 </style>
 </head>
 
