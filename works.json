@@ -303,12 +303,12 @@
   "media": "digital",
   "description": "Chromatic road‑movie visions: neon highways, endless horizons and synth‑infused nostalgia rendered in crisp pixels.",
   "images": [
-    { "title": "Autobahn",                "year": 2024, "url": "https://i.imgur.com/abOKWT7.jpeg" },
-    { "title": "The Long and Winding Road","year": 2024, "url": "https://i.imgur.com/oUfCwCf.jpeg" },
-    { "title": "Lighthouse",              "year": 2024, "url": "https://i.imgur.com/yrJknLz.jpeg" },
-    { "title": "One Two Trip",            "year": 2024, "url": "https://i.imgur.com/o22gEof.jpeg" },
-    { "title": "On The Road Again",       "year": 2024, "url": "https://i.imgur.com/v7ibLfY.jpeg" },
-    { "title": "Running Up That Hill",    "year": 2025, "url": "https://i.imgur.com/ZFfEshD.jpeg" }
+    { "title": "Autobahn",                "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/Autobahn.jpeg" },
+    { "title": "The Long and Winding Road","year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/The%20Long%20and%20Winding%20Road.jpeg" },
+    { "title": "Lighthouse",              "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/Lighthouse.jpeg" },
+    { "title": "One Two Trip",            "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/One%20Two%20Trip.jpeg" },
+    { "title": "On The Road Again",       "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/On%E2%80%AFThe%E2%80%AFRoad%E2%80%AFAgain.jpeg" },
+    { "title": "Running Up That Hill",    "year": 2025, "url": "https://cdn.deisign.me/Modern%20Dreams/Running%20Up%20That%20Hill.jpeg" }
   ],
   "color": 6
 },
