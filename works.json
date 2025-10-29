@@ -336,14 +336,14 @@
   "media": "digital",
   "description": "Dark botanical vignettes where pop‑culture slogans collide with withered blooms, ash and quiet menace.",
   "images": [
-    { "title": "Mother's Little Helper",  "year": 2020, "url": "https://i.imgur.com/2D1SdlL.jpg" },
-    { "title": "Fire!",                  "year": 2019, "url": "https://i.imgur.com/IL3yaKN.jpg" },
-    { "title": "December",               "year": 2019, "url": "https://i.imgur.com/rXfrMfX.jpg" },
-    { "title": "Vanitas",                "year": 2020, "url": "https://i.imgur.com/mBxjwfc.jpg" },
-    { "title": "Shhhh",                  "year": 2020, "url": "https://i.imgur.com/SFfqHOy.jpg" },
-    { "title": "Mary",                   "year": 2020, "url": "https://i.imgur.com/hoYDWDy.jpg" },
-    { "title": "Champagne & Cigarettes", "year": 2022, "url": "https://i.imgur.com/bZLgN6F.jpg" },
-    { "title": "One Shot",               "year": 2022, "url": "https://i.imgur.com/nz7wEEK.jpg" }
+    { "title": "Mother's Little Helper",  "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Mother's%20Little%20Helper.jpeg" },
+    { "title": "Fire!",                  "year": 2019, "url": "https://cdn.deisign.me/Nature%20Vites/Fire!.jpeg" },
+    { "title": "December",               "year": 2019, "url": "https://cdn.deisign.me/Nature%20Vites/December.jpeg" },
+    { "title": "Vanitas",                "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Vanitas.jpeg" },
+    { "title": "Shhhh",                  "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Shhhh.jpeg" },
+    { "title": "Mary",                   "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Mary.jpeg" },
+    { "title": "Champagne & Cigarettes", "year": 2022, "url": "https://cdn.deisign.me/Nature%20Vites/Champagne%20%26%20Cigarettes.jpeg" },
+    { "title": "One Shot",               "year": 2022, "url": "https://cdn.deisign.me/Nature%20Vites/One%20Shot.jpeg" }
   ],
   "color": 8
 },
