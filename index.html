@@ -2,193 +2,318 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vadym Antonyuk — deisign.me</title>
 
 <link rel="canonical" href="https://deisign.me" />
-<meta name="description" content="Portfolio of Vadym Antonyuk — series, linocuts, acrylic and digital works inspired by mid-century modern aesthetics.">
+<meta name="description" content="Portfolio of Vadym Antonyuk — mid-century modern reconstructions, linocuts, markers and digital series.">
 <meta property="og:image" content="https://deisign.me/preview.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- favicons -->
+<!-- Favicon / App icon -->
 <link rel="icon" type="image/png" href="32.png">
 <link rel="apple-touch-icon" href="512.png">
 
+<!-- Space Grotesk -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
+/* ===== Palette ===== */
 :root{
   --paper-bg:#f5f0e6;
   --paper-text:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   --frame:#111;
   --btn:#3A6EA5; --btn-hover:#F7B801;
-  --thumb-size:140px;
+  --thumb-size:128px;
+
+  --c1:#3A6EA5;  --a1:#F7B801;
+  --c2:#DB4F3D;  --a2:#F5F0E6;
+  --c3:#597E52;  --a3:#F7B801;
+  --c4:#E0A458;  --a4:#1D1D1D;
+  --c5:#1C1C1C;  --a5:#DB4F3D;
+  --c6:#2E4559;  --a6:#F7B801;
+  --c7:#8E3A84;  --a7:#F7B801;
+  --c8:#C4233C;  --a8:#F5F0E6;
+  --c9:#008C6C;  --a9:#F7B801;
+  --c10:#F7B801; --a10:#1C1C1C;
+  --c11:#4E84C4; --a11:#FFD7A0;
+  --c12:#FF7F00; --a12:#1D1D1D;
+  --c13:#006AA7; --a13:#F7B801;
+  --c14:#B71C1C; --a14:#FFE1C6;
+  --c15:#355070; --a15:#E9C46A;
+  --c16:#5A352A; --a16:#F1FAEE;
+  --c17:#264653; --a17:#E76F51;
+  --c18:#008491; --a18:#F9DC5C;
+  --c19:#843B62; --a19:#FFBC42;
+  --c20:#6A4C93; --a20:#F0F0F0;
+  --c21:#0F6A6A;  --a21:#F6E7C1;
+  --c22:#A65E2E;  --a22:#FFF1D6;
+  --c23:#6B8A3F;  --a23:#F4E4A1;
+  --c24:#3D405B;  --a24:#F2E9E4;
+  --c25:#7A5C41;  --a25:#FBE7C6;
+  --c26:#2B3A42;  --a26:#FFE8A3;
+  --c27:#9A5A5A;  --a27:#FFF0E6;
+  --c28:#586E75;  --a28:#FFE6A7;
+  --c29:#8C6A2F;  --a29:#F8EDC2;
+  --c30:#2E5E4E;  --a30:#F3E9D2;
+  --c31:#3C6E71;  --a31:#F8F3E3;
+  --c32:#B85C38;  --a32:#FFF0DA;
+  --c33:#5F4B66;  --a33:#EAE4F2;
+  --c34:#7D8F69;  --a34:#FFF1C1;
+  --c35:#1D3A7D;  --a35:#F1E9FF;
+  --c36:#556B2F;  --a36:#F1E8B8;
+  --c37:#A68A64;  --a37:#1C1C1C;
+  --c38:#3F5E5A;  --a38:#FFECD1;
+  --c39:#924C2E;  --a39:#FFF2D5;
+  --c40:#304C89;  --a40:#F7F4EA;
 }
 
-/* basic layout */
-body{margin:0;background:var(--paper-bg) var(--paper-text);font:16px/1.5 system-ui;}
-header{background:#DB4F3D;color:#fff;padding:18px 22px;font-size:22px;}
-main{max-width:1200px;margin:0 auto;padding:24px;}
-nav.filter{
-  display:flex;flex-wrap:wrap;gap:8px;margin:12px 24px 24px;
+/* ===== Base ===== */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--paper-bg) var(--paper-text);
+  color:#111;
+  font:16px/1.5 "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
+
+/* ===== Hero Splash (прокрутка) ===== */
+.hero{
+  height:100vh; min-height:520px;
+  background:#DB4F3D;
+  display:grid; place-items:center;
+}
+.hero img{ width:min(42vw, 320px); height:auto; }
+
+/* ===== Top bar ===== */
+header{
+  background:#fff; border-bottom:1px solid #eee;
+  position:sticky; top:0; z-index:10;
+}
+.header-wrap{
+  max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between;
+  padding:14px 20px;
+}
+.brand{font-weight:700; letter-spacing:.02em}
+nav.filter{display:flex; flex-wrap:wrap; gap:8px}
 nav.filter button{
-  background:#fff;border:1px solid #ccc;padding:6px 14px;
-  cursor:pointer;font-size:15px;border-radius:6px;
+  background:#fff; border:1px solid #ccc; padding:6px 12px; cursor:pointer;
+  font:500 14px/1 "Space Grotesk", system-ui; border-radius:999px;
 }
-nav.filter button.active{
-  background:#DB4F3D;color:#fff;border-color:#DB4F3D;
-}
+nav.filter button.active{background:#DB4F3D; color:#fff; border-color:#DB4F3D}
+
+/* ===== Main ===== */
+main{ max-width:1200px; margin:0 auto; padding:24px 20px 48px; }
 .series{
-  margin-bottom:48px;padding:16px 24px 28px;background:#fff;border-radius:8px;
-  box-shadow:0 1px 3px #0001;
+  margin: 0 0 56px 0;
+  /* индивидуальная палитра серии */
+  --bg:var(--c1); --fg:var(--a1);
+  background:var(--bg); color:var(--fg);
+  padding:18px 22px 26px; border-left:6px solid var(--fg); border-radius:10px;
+  box-shadow: 0 2px 6px #0001;
 }
-.series h2{margin:0 0 6px;}
-.series .works{display:flex;flex-wrap:wrap;gap:10px;}
+.series h2{ margin:0 0 6px; font-size:26px; color:var(--fg) }
+.series .meta{ font-size:14px; opacity:.85 }
+.series .description{ margin:10px 0 16px; max-width:720px }
+.series .works{ display:flex; flex-wrap:wrap; gap:10px }
+.series .work .thumb{ display:block; text-decoration:none; color:inherit }
 .series .work img{
-  width:var(--thumb-size);height:auto;border-radius:4px;display:block;
-  transition:transform .2s ease;cursor:pointer;
+  width:var(--thumb-size); height:auto; border-radius:6px; background:#eee;
+  border:2px solid #fff4; box-shadow:0 1px 3px #0002; transition:transform .16s ease;
 }
-.series .work img:hover{transform:scale(1.05);}
-.series .work p{margin:3px 0 0;font-size:13px;text-align:center;}
+.series .work img:hover{ transform:scale(1.04) }
+.series .work p{ margin:4px 0 0; font-size:12.5px }
 
-/* splash */
-#splash{
-  position:fixed;inset:0;background:#DB4F3D;
-  display:flex;align-items:center;justify-content:center;
-  z-index:9999;transition:opacity .5s ease;
+/* ===== Load more ===== */
+.load-more{
+  display:block; margin:22px auto 0; padding:8px 16px; border-radius:999px; cursor:pointer;
+  background:#fff; border:1px solid #ccc; font:500 14px/1 "Space Grotesk", system-ui;
 }
-#splash.hidden{opacity:0;pointer-events:none;}
-#splash img{width:128px;height:128px;animation:pulse 2s infinite;}
-@keyframes pulse{0%,100%{opacity:.7;}50%{opacity:1;}}
+.load-more:hover{ background:#fafafa }
 
-/* lightbox (оставляем) */
+/* ===== Lightbox ===== */
 .lightbox{
-  position:fixed;inset:0;background:rgba(0,0,0,.9);
-  display:flex;align-items:center;justify-content:center;
-  opacity:0;pointer-events:none;transition:.2s ease;z-index:9999;
+  position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.9);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none; transition:.2s ease;
 }
-.lightbox.open{opacity:1;pointer-events:auto;}
-.lightbox img{max-width:90vw;max-height:90vh;}
+.lightbox.open{ opacity:1; pointer-events:auto }
+.lightbox .lb-img{ max-width:92vw; max-height:92vh; display:block }
 .lightbox button{
-  position:absolute;background:none;border:none;color:#fff;font-size:32px;
-  cursor:pointer;user-select:none;
+  position:absolute; background:none; border:none; color:#fff; font-size:30px; cursor:pointer; user-select:none;
 }
-.lb-close{top:20px;right:24px;}
-.lb-prev{left:24px;}
-.lb-next{right:24px;}
-.lb-caption{position:absolute;bottom:20px;width:100%;text-align:center;color:#fff;}
+.lb-close{ top:18px; right:22px }
+.lb-prev{ left:22px }
+.lb-next{ right:22px }
+.lb-caption{ position:absolute; bottom:18px; width:100%; text-align:center; color:#fff; font-size:14px }
+
+/* ===== Footer ===== */
+footer{
+  border-top:1px solid #eee; background:#fff;
+  padding:18px 20px; color:#444; font-size:14px;
+}
+.footer-wrap{ max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px }
+footer a{ color:#3A6EA5; text-decoration:none } footer a:hover{ text-decoration:underline }
 </style>
 </head>
 
 <body>
 
-<!-- Splash -->
-<div id="splash"><img src="512.png" alt="symbol"></div>
+<!-- HERO SPLASH: просто первый экран, прокручивается -->
+<section class="hero" aria-label="splash">
+  <img src="512.png" alt="symbol">
+</section>
+
+<!-- Sticky header с фильтром -->
+<header>
+  <div class="header-wrap">
+    <div class="brand">Vadym Antonyuk — deisign.me</div>
+    <nav class="filter" aria-label="media filter"></nav>
+  </div>
+</header>
+
+<main id="gallery"></main>
 
 <!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <button class="lb-close">✕</button>
-  <button class="lb-prev">←</button>
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" aria-label="Prev">←</button>
   <img class="lb-img" alt="">
-  <button class="lb-next">→</button>
+  <button class="lb-next" aria-label="Next">→</button>
   <div class="lb-caption"></div>
 </div>
 
-<header>Vadym Antonyuk — deisign.me</header>
-<nav class="filter"></nav>
-<main id="gallery"></main>
+<footer>
+  <div class="footer-wrap">
+    <div>© Vadym Antonyuk</div>
+    <div>Radio: <a href="https://coma.fm" target="_blank" rel="noopener">coma.fm</a> · Telegram: <a href="https://t.me/radiocoma" target="_blank" rel="noopener">@radiocoma</a></div>
+  </div>
+</footer>
 
 <script>
-let allSeries=[],filtered=[],currentMedia="all",perPage=5,page=0;
+let allSeries=[], filtered=[], currentMedia="all", perPage=5, page=0;
 
+/* ===== Init ===== */
+init();
 async function init(){
-  const r=await fetch('works.json'); allSeries=await r.json();
-  filtered=[...allSeries];
+  const r = await fetch('works.json'); allSeries = await r.json();
+  filtered = [...allSeries];
   buildFilterMenu();
-  renderNext();
-  hideSplash();
-  initLightbox();
+  renderNext();              // первая порция
 }
 
+/* ===== Filter menu ===== */
 function buildFilterMenu(){
-  const medias=[...new Set(allSeries.map(s=>s.media))];
-  const nav=document.querySelector('nav.filter');
-  nav.innerHTML='<button data-media="all" class="active">All</button>'+
+  const medias = [...new Set(allSeries.map(s=>s.media))].filter(Boolean);
+  const nav = document.querySelector('nav.filter');
+  nav.innerHTML =
+    `<button data-media="all" class="active">All</button>` +
     medias.map(m=>`<button data-media="${m}">${m}</button>`).join('');
-  nav.addEventListener('click',e=>{
-    const btn=e.target.closest('button'); if(!btn)return;
-    document.querySelectorAll('nav.filter button').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    currentMedia=btn.dataset.media;
-    page=0;
-    filtered=currentMedia==='all'?allSeries:allSeries.filter(s=>s.media===currentMedia);
-    document.getElementById('gallery').innerHTML='';
+  nav.addEventListener('click', e=>{
+    const btn = e.target.closest('button'); if(!btn) return;
+    nav.querySelectorAll('button').forEach(b=>b.classList.toggle('active', b===btn));
+    currentMedia = btn.dataset.media;
+    page = 0;
+    filtered = currentMedia==='all' ? allSeries : allSeries.filter(s=>s.media===currentMedia);
+    document.getElementById('gallery').innerHTML = '';
     renderNext();
   });
 }
 
+/* ===== Paged render ===== */
 function renderNext(){
-  const container=document.getElementById('gallery');
-  const next=filtered.slice(page*perPage,page*perPage+perPage);
-  next.forEach(s=>container.appendChild(renderSeries(s)));
+  const container = document.getElementById('gallery');
+  const next = filtered.slice(page*perPage, page*perPage + perPage);
+  next.forEach(s=> container.appendChild(renderSeries(s)));
   page++;
-  if(page*perPage<filtered.length){
-    const more=document.createElement('button');
-    more.textContent='Дальше';
-    more.style.cssText='display:block;margin:24px auto;padding:8px 18px;';
-    more.onclick=()=>{more.remove();renderNext();};
-    container.appendChild(more);
+  // кнопка "Дальше"
+  const moreBtn = container.querySelector('.load-more');
+  if (moreBtn) moreBtn.remove();
+  if (page*perPage < filtered.length){
+    const btn = document.createElement('button');
+    btn.className = 'load-more'; btn.textContent = 'Дальше';
+    btn.onclick = ()=>{ btn.remove(); renderNext(); };
+    container.appendChild(btn);
   }
 }
 
+/* ===== Series block with per-series palette ===== */
+function applyPalette(el, idx){
+  const n = Math.min(Math.max(Number(idx)||1, 1), 40);
+  el.style.setProperty('--bg', `var(--c${n})`);
+  el.style.setProperty('--fg', `var(--a${n})`);
+}
+
 function renderSeries(item){
-  const sec=document.createElement('section');
-  sec.className='series';
-  sec.innerHTML=`
-    <h2>${item.title}</h2>
-    <p class="meta">${item.year} / ${item.media}</p>
-    <p class="description">${item.description||''}</p>
-    <div class="works">
-      ${item.images.map(i=>`
-        <div class="work">
-          <img src="${i.thumb||i.url}" data-full="${i.full||i.url}" alt="${i.title||''}">
-          <p>${i.title||''}</p>
-        </div>`).join('')}
-    </div>`;
+  const sec = document.createElement('section');
+  sec.className = 'series';
+  applyPalette(sec, item.color);
+  const worksHTML = (item.images||[]).map(i=>{
+    const full  = i.full || i.url;
+    const thumb = i.thumb || i.url;
+    const title = i.title || '';
+    const year  = i.year ? ` (${i.year})` : '';
+    return `
+      <div class="work">
+        <a href="${full}" class="thumb" data-full="${full}" data-title="${escapeHtml(title)}" data-year="${i.year||''}" data-series="${escapeHtml(item.title||'')}">
+          <img src="${thumb}" loading="lazy" alt="${escapeHtml(title)}">
+        </a>
+        <p>${escapeHtml(title)}${year}</p>
+      </div>`;
+  }).join('');
+
+  sec.innerHTML = `
+    <h2>${escapeHtml(item.title||'')}</h2>
+    <p class="meta">${escapeHtml(item.year||'')} / ${escapeHtml(item.media||'')}</p>
+    <p class="description">${escapeHtml(item.description||'')}</p>
+    <div class="works">${worksHTML}</div>
+  `;
   return sec;
 }
 
-function hideSplash(){ setTimeout(()=>document.getElementById('splash').classList.add('hidden'),1000); }
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])) }
 
-/* lightbox */
-let LB={root:null,img:null,cap:null,list:[],idx:0};
-function initLightbox(){
-  LB.root=document.getElementById('lightbox');
-  LB.img=LB.root.querySelector('.lb-img');
-  LB.cap=LB.root.querySelector('.lb-caption');
-  document.addEventListener('click',e=>{
-    const img=e.target.closest('.work img'); if(!img)return;
-    LB.list=[...document.querySelectorAll('.work img')];
-    LB.idx=LB.list.indexOf(img);
-    openLightbox(LB.idx);
+/* ===== Lightbox ===== */
+const LB = { root:null, img:null, cap:null, list:[], idx:0 };
+(function initLightbox(){
+  LB.root = document.getElementById('lightbox');
+  LB.img  = LB.root.querySelector('.lb-img');
+  LB.cap  = LB.root.querySelector('.lb-caption');
+  // делегирование клика по превью
+  document.addEventListener('click', (e)=>{
+    const a = e.target.closest('a.thumb'); if(!a) return;
+    e.preventDefault();
+    const series = a.getAttribute('data-series') || '';
+    LB.list = [...document.querySelectorAll(`a.thumb[data-series="${CSS.escape(series)}"]`)];
+    LB.idx = Math.max(0, LB.list.indexOf(a));
+    openLB(LB.idx);
   });
-  LB.root.querySelector('.lb-close').onclick=closeLB;
-  LB.root.querySelector('.lb-prev').onclick=()=>openLightbox(LB.idx-1);
-  LB.root.querySelector('.lb-next').onclick=()=>openLightbox(LB.idx+1);
-  window.addEventListener('keydown',e=>{
-    if(e.key==='Escape')closeLB();
-    if(e.key==='ArrowLeft')openLightbox(LB.idx-1);
-    if(e.key==='ArrowRight')openLightbox(LB.idx+1);
+  LB.root.querySelector('.lb-close').onclick = closeLB;
+  LB.root.querySelector('.lb-prev').onclick  = ()=>openLB(LB.idx-1);
+  LB.root.querySelector('.lb-next').onclick  = ()=>openLB(LB.idx+1);
+  LB.root.addEventListener('click', e=>{ if(e.target===LB.root) closeLB(); });
+  window.addEventListener('keydown', e=>{
+    if(!LB.root.classList.contains('open')) return;
+    if(e.key==='Escape') closeLB();
+    if(e.key==='ArrowLeft') openLB(LB.idx-1);
+    if(e.key==='ArrowRight') openLB(LB.idx+1);
   });
-}
-function openLightbox(i){
-  LB.idx=(i+LB.list.length)%LB.list.length;
-  const img=LB.list[LB.idx];
-  LB.img.src=img.dataset.full;
-  LB.cap.textContent=img.alt||'';
+})();
+function openLB(i){
+  LB.idx = (i + LB.list.length) % LB.list.length;
+  const a = LB.list[LB.idx];
+  const full  = a.getAttribute('data-full');
+  const title = a.getAttribute('data-title') || '';
+  const year  = a.getAttribute('data-year');
+  LB.img.src = full;
+  LB.img.alt = title;
+  LB.cap.textContent = title + (year ? ` (${year})` : '');
   LB.root.classList.add('open');
 }
-function closeLB(){LB.root.classList.remove('open');}
-init();
+function closeLB(){ LB.root.classList.remove('open'); }
 </script>
 </body>
 </html>
