@@ -457,20 +457,18 @@
   "media": "digital",
   "description": "A sleeve‑design anthology: indie albums and literary covers reimagined in stark mid‑century colour blocks and grainy halftone.",
   "images": [
-    { "title": "Perkalaba Familia — Under the Mushrooms (poster)", "year": 2019, "url": "https://i.imgur.com/CMJROAe.jpg" },
-
-    { "title": "Oleksandr Irvanets — 3+2 (I)",   "year": 2020, "url": "https://i.imgur.com/hhGLSeC.jpg" },
-    { "title": "Oleksandr Irvanets — 3+2 (II)",  "year": 2020, "url": "https://i.imgur.com/y75ETD2.jpg" },
-    { "title": "Oleksandr Irvanets — 3+2 (III)", "year": 2020, "url": "https://i.imgur.com/myhoeqN.jpg" },
-
-    { "title": "Amphibian Man — Seven",              "year": 2020, "url": "https://i.imgur.com/78G141U.jpg" },
-    { "title": "Amphibian Man — Flaming Home (I)",   "year": 2022, "url": "https://i.imgur.com/MjcONdt.jpg" },
-    { "title": "Amphibian Man — Flaming Home (II)",  "year": 2022, "url": "https://i.imgur.com/vKPeXFj.jpg" },
-    { "title": "Amphibian Man — Path (I)",           "year": 2023, "url": "https://i.imgur.com/kmkEXDR.jpg" },
-    { "title": "Amphibian Man — Path (II)",          "year": 2023, "url": "https://i.imgur.com/h1fPz3I.jpeg" },
-    { "title": "Amphibian Man — Program",            "year": 2023, "url": "https://i.imgur.com/BAQYuHn.jpeg" },
-    { "title": "Amphibian Man — Zenith",             "year": 2024, "url": "https://i.imgur.com/xuht0vE.jpeg" },
-    { "title": "Amphibian Man — Ether",              "year": 2025, "url": "https://i.imgur.com/1xEsKCn.jpeg" },
+    { "title": "Perkalaba Familia — Under the Mushrooms (poster)", "year": 2019, "url": "https://cdn.deisign.me/Covers/Under%20the%20Mushrooms.jpeg" },
+    { "title": "Oleksandr Irvanets — 3+2 (I)",   "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(I).jpeg" },
+    { "title": "Oleksandr Irvanets — 3+2 (II)",  "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(II).jpeg" },
+    { "title": "Oleksandr Irvanets — 3+2 (III)", "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(III).jpeg" },
+    { "title": "Amphibian Man — Seven",              "year": 2020, "url": "https://cdn.deisign.me/Covers/Seven.jpeg" },
+    { "title": "Amphibian Man — Flaming Home (I)",   "year": 2022, "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(I).jpeg" },
+    { "title": "Amphibian Man — Flaming Home (II)",  "year": 2022, "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(II).jpeg" },
+    { "title": "Amphibian Man — Path (I)",           "year": 2023, "url": "https://cdn.deisign.me/Covers/Path%C2%A0(I).jpeg" },
+    { "title": "Amphibian Man — Path (II)",          "year": 2023, "url": "https://cdn.deisign.me/Covers/Path%C2%A0(II).jpeg" },
+    { "title": "Amphibian Man — Program",            "year": 2023, "url": "https://cdn.deisign.me/Covers/Program.jpeg" },
+    { "title": "Amphibian Man — Zenith",             "year": 2024, "url": "https://cdn.deisign.me/Covers/Zenith.jpeg" },
+    { "title": "Amphibian Man — Ether",              "year": 2025, "url": "https://cdn.deisign.me/Covers/Ether.jpeg" },
     { "title": "Amphibian Man — Observer",           "year": 2025, "url": "https://cdn.deisign.me/Covers/observer.jpg" }
   ],
   "color": 14
