@@ -442,12 +442,12 @@
   "media": "digital",
   "description": "Bold poster statements mixing vintage agit‑prop layouts with 21‑st‑century slogans and frontline irony.",
   "images": [
-    { "title": "Free Borsht",        "year": 2019, "url": "https://i.imgur.com/Js3XA3d.jpg" },
-    { "title": "Fireworks",          "year": 2020, "url": "https://i.imgur.com/SxE4bHK.jpg" },
-    { "title": "La Résistance",      "year": 2021, "url": "https://i.imgur.com/0ordeXO.jpg" },
-    { "title": "russian warship",    "year": 2022, "url": "https://i.imgur.com/gAd4TlU.jpg" },
-    { "title": "Ukraine Now",        "year": 2022, "url": "https://i.imgur.com/W0L3LEb.jpg" },
-    { "title": "Smoke on the Water", "year": 2022, "url": "https://i.imgur.com/4a8Hu7h.jpg" }
+    { "title": "Free Borsht",        "year": 2019, "url": "https://cdn.deisign.me/Propaganda/Free%20Borsht.jpeg" },
+    { "title": "Fireworks",          "year": 2020, "url": "https://cdn.deisign.me/Propaganda/Fireworks.jpeg" },
+    { "title": "La Résistance",      "year": 2021, "url": "https://cdn.deisign.me/Propaganda/La%C2%A0R%C3%A9sistance.jpeg" },
+    { "title": "russian warship",    "year": 2022, "url": "https://cdn.deisign.me/Propaganda/russian%20warship.jpeg" },
+    { "title": "Ukraine Now",        "year": 2022, "url": "https://cdn.deisign.me/Propaganda/Smoke%20on%20the%20Water.jpeg" },
+    { "title": "Smoke on the Water", "year": 2022, "url": "https://cdn.deisign.me/Propaganda/Smoke%20on%20the%20Water.jpeg" }
   ],
   "color": 13
 },
