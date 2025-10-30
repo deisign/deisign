@@ -552,4 +552,16 @@
   ],
   "color": 18
 }
+  },
+{
+  "title": "Drypoint",
+  "year": "2023",
+  "media": "drypoint",
+  "description": "intaglio",
+  "images": [
+    { "title": "Ceci n`est pas Duchamp",   "year": 2023, "url": "https://cdn.deisign.me/Markers/Half%C2%A0Moon.jpeg" },
+  
+  ],
+  "color": 23
+}
 ]
