@@ -428,11 +428,11 @@
   "media": "digital",
   "description": "Five neon‑tinted vignettes that sample motel lights, wet asphalt and rear‑window suspense.",
   "images": [
-    { "title": "Motel",         "year": 2020, "url": "https://i.imgur.com/MbQmbJ1.jpg" },
-    { "title": "Noir Désir",    "year": 2020, "url": "https://i.imgur.com/Js2hG7D.jpg" },
+    { "title": "Motel",         "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Motel.jpeg" },
+    { "title": "Noir Désir",    "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Noir%20D%C3%A9sir.jpeg" },
     { "title": "Table Talk",    "year": 2020, "url": "https://i.imgur.com/Dm8uhU3.jpg" },
-    { "title": "Tunnel of Love","year": 2020, "url": "https://i.imgur.com/AlrEA2W.jpg" },
-    { "title": "Voyeur",        "year": 2020, "url": "https://i.imgur.com/1fQkDSj.jpg" }
+    { "title": "Tunnel of Love","year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Tunnel%20of%20Love.jpeg" },
+    { "title": "Voyeur",        "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Voyeur.jpeg" }
   ],
   "color": 12
 },
