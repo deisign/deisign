@@ -540,11 +540,11 @@
   "media": "markers",
   "description": "Expressive marker sketches: lunar moods, trapped figures and comic‑style heroes.",
   "images": [
-    { "title": "Half Moon",   "year": 2024, "url": "https://i.imgur.com/OzOoVbU.jpeg" },
-    { "title": "Trapped",     "year": 2024, "url": "https://i.imgur.com/Hyeiha1.jpeg" },
+    { "title": "Half Moon",   "year": 2024, "url": "https://cdn.deisign.me/Markers/Half%C2%A0Moon.jpeg" },
+    { "title": "Trapped",     "year": 2024, "url": "https://cdn.deisign.me/Markers/Trapped.jpeg" },
     { "title": "The Emperor", "year": 2024, "url": "https://cdn.deisign.me/Tarot/The%20Emperor.jpeg" },
-    { "title": "Equilibrium", "year": 2024, "url": "https://i.imgur.com/lv6wXEf.jpeg" },
-    { "title": "Paw Patrol",  "year": 2024, "url": "https://i.imgur.com/rckx1Ez.jpeg" }
+    { "title": "Equilibrium", "year": 2024, "url": "https://cdn.deisign.me/Markers/Equilibrium.jpeg" },
+    { "title": "Paw Patrol",  "year": 2024, "url": "https://cdn.deisign.me/Markers/Paw%C2%A0Patrol.jpeg" }
   ],
   "color": 18
 }
