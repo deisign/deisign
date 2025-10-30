@@ -529,8 +529,8 @@
   "media": "acrylic",
   "description": "Stand‑alone acrylic canvases in saturated playback‑boogie tones.",
   "images": [
-    { "title": "Playback", "year": 2024, "url": "https://i.imgur.com/2Fk9v7R.jpeg" },
-    { "title": "Boogie",   "year": 2024, "url": "https://i.imgur.com/eBMTvZO.jpeg" }
+    { "title": "Playback", "year": 2024, "url": "https://cdn.deisign.me/Acrylic/Playback.jpeg" },
+    { "title": "Boogie",   "year": 2024, "url": "https://cdn.deisign.me/Acrylic/Boogie.jpeg" }
   ],
   "color": 17
 },
