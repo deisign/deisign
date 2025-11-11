@@ -6,7 +6,10 @@
   "description": "Deconstructed signs, fading words — echoes of the Polish poster reborn in black.",
   "images": [
     { "title": "1984", "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/1984.jpg" },
-    { "title": "Głos Ciszy",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/glos_ciszy.jpg" }
+    { "title": "Głos Ciszy",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/glos_ciszy.jpg" },
+    { "title": "Granica",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/border.jpg" },
+    { "title": "Pułapka",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/trap.jpg" },
+    { "title": "Nadzieja",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/hope.jpg" }
    
   ],
   "color": 22
