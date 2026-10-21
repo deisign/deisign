@@ -1,5 +1,24 @@
 [
   {
+    "title": "Les Fleurs du Mal",
+    "year": "2026",
+    "media": "oil pastel",
+    "description": "Two studies in desire, darkness and the strange beauty of evil.",
+    "images": [
+      {
+        "title": "La Fleur du Mal",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Les%20Fleurs%20du%20Mal/fdm.jpg"
+      },
+      {
+        "title": "Le Chat",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Les%20Fleurs%20du%20Mal/chat.jpg"
+      }
+    ],
+    "color": 5
+  },
+  {
     "title": "Process Series",
     "year": "2026",
     "media": "digital",
