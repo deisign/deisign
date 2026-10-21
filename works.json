@@ -1,5 +1,49 @@
 [
   {
+    "title": "Process Series",
+    "year": "2026",
+    "media": "digital",
+    "description": "Seven monochrome visions of control, conformity and resistance — individuals caught in the machinery of systems.",
+    "images": [
+      {
+        "title": "Access",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/access.jpg"
+      },
+      {
+        "title": "Drag",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/drag.jpg"
+      },
+      {
+        "title": "Footing",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/footing.jpg"
+      },
+      {
+        "title": "Mahabharata",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/mahabharata.jpg"
+      },
+      {
+        "title": "Override",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/override.jpg"
+      },
+      {
+        "title": "Pipeline",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/pipeline.jpg"
+      },
+      {
+        "title": "Seen",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Process/seen.jpg"
+      }
+    ],
+    "color": 24
+  },
+  {
   "title": "Polski Plakat Series",
   "year": "2025",
   "media": "markers",
