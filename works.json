@@ -44,57 +44,152 @@
     "color": 24
   },
   {
-  "title": "Polski Plakat Series",
-  "year": "2025",
-  "media": "markers",
-  "description": "Deconstructed signs, fading words — echoes of the Polish poster reborn in black.",
-  "images": [
-    { "title": "1984", "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/1984.jpg" },
-    { "title": "Głos Ciszy",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/glos_ciszy.jpg" },
-    { "title": "Granica",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/border.jpg" },
-    { "title": "Pułapka",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/trap.jpg" },
-    { "title": "Nadzieja",  "year": 2025, "url": "https://cdn.deisign.me/Polski%20Plakat/hope.jpg" }
-   
-  ],
-  "color": 22
-},
+    "title": "Polski Plakat Series",
+    "year": "2025",
+    "media": "markers",
+    "description": "Deconstructed signs, fading words — echoes of the Polish poster reborn in black.",
+    "images": [
+      {
+        "title": "1984",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Polski%20Plakat/1984.jpg"
+      },
+      {
+        "title": "Głos Ciszy",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Polski%20Plakat/glos_ciszy.jpg"
+      },
+      {
+        "title": "Granica",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Polski%20Plakat/border.jpg"
+      },
+      {
+        "title": "Pułapka",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Polski%20Plakat/trap.jpg"
+      },
+      {
+        "title": "Nadzieja",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Polski%20Plakat/hope.jpg"
+      }
+    ],
+    "color": 22
+  },
   {
-  "title": "Saudade Series",
-  "year": "2025",
-  "media": "markers",
-  "description": "Minimal forms, fragile textures — an anatomy of nostalgia.",
-  "images": [
-    { "title": "Memory", "year": 2025, "url": "https://cdn.deisign.me/saudade/Memory.jpg" },
-    { "title": "Countdown",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Countdown.jpg" },
-    { "title": "Reflection",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Reflection.jpg" },
-    { "title": "Waning Crescent",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Waning%20Crescent.jpg" },
-    { "title": "Out of Sand",  "year": 2025, "url": "https://cdn.deisign.me/saudade/outofsand.jpg" },
-    { "title": "Time",  "year": 2025, "url": "https://cdn.deisign.me/saudade/time.jpg" },
-    { "title": "Got Light? / Blackout",  "year": 2025, "url": "https://cdn.deisign.me/saudade/gotlight.jpg" },
-    { "title": "Still Light",  "year": 2025, "url": "https://cdn.deisign.me/saudade/wait.jpg" },
-    { "title": "Exitless",  "year": 2025, "url": "https://cdn.deisign.me/saudade/exitless.jpg" },
-    { "title": "Ashes",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Ashes.jpg" },
-    { "title": "Threshold",  "year": 2025, "url": "https://cdn.deisign.me/saudade/threshhold.jpg" },
-    { "title": "Leave / СЗЧ",  "year": 2025, "url": "https://cdn.deisign.me/saudade/leave.jpg" },
-    { "title": "Marathon",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Marathon.jpg" },
-    { "title": "Shelter",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Shelter.jpg" },
-    { "title": "My Black Custom Strat",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Black-Custom-Strat.jpg" },
-    { "title": "Walkout",  "year": 2025, "url": "https://cdn.deisign.me/saudade/Walkout.jpg" },
-    { "title": "That`s All, Folks!",  "year": 2025, "url": "https://cdn.deisign.me/saudade/folks.jpg" }
-  ],
-  "color": 20
-},
+    "title": "Saudade Series",
+    "year": "2025",
+    "media": "markers",
+    "description": "Minimal forms, fragile textures — an anatomy of nostalgia.",
+    "images": [
+      {
+        "title": "Memory",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Memory.jpg"
+      },
+      {
+        "title": "Countdown",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Countdown.jpg"
+      },
+      {
+        "title": "Reflection",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Reflection.jpg"
+      },
+      {
+        "title": "Waning Crescent",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Waning%20Crescent.jpg"
+      },
+      {
+        "title": "Out of Sand",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/outofsand.jpg"
+      },
+      {
+        "title": "Time",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/time.jpg"
+      },
+      {
+        "title": "Got Light? / Blackout",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/gotlight.jpg"
+      },
+      {
+        "title": "Still Light",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/wait.jpg"
+      },
+      {
+        "title": "Exitless",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/exitless.jpg"
+      },
+      {
+        "title": "Ashes",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Ashes.jpg"
+      },
+      {
+        "title": "Threshold",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/threshhold.jpg"
+      },
+      {
+        "title": "Leave / СЗЧ",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/leave.jpg"
+      },
+      {
+        "title": "Marathon",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Marathon.jpg"
+      },
+      {
+        "title": "Shelter",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Shelter.jpg"
+      },
+      {
+        "title": "My Black Custom Strat",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Black-Custom-Strat.jpg"
+      },
+      {
+        "title": "Walkout",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/Walkout.jpg"
+      },
+      {
+        "title": "That`s All, Folks!",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/saudade/folks.jpg"
+      }
+    ],
+    "color": 20
+  },
   {
-  "title": "Soul Bass Series",
-  "year": "2025",
-  "media": "digital",
-  "description": "Minimal silhouettes, pure Saul Bass vibe.",
-  "images": [
-    { "title": "Nobody Home",                "year": 2025, "url": "https://cdn.deisign.me/Soul%20Bass/Nobody%20Home.jpeg" },
-    { "title": "Turn Your Lights Down Low",  "year": 2025, "url": "https://cdn.deisign.me/Soul%20Bass/Turn%20Your%20Lights%20Down%20Low.jpeg" }
-  ],
-  "color": 19
-},
+    "title": "Soul Bass Series",
+    "year": "2025",
+    "media": "digital",
+    "description": "Minimal silhouettes, pure Saul Bass vibe.",
+    "images": [
+      {
+        "title": "Nobody Home",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Soul%20Bass/Nobody%20Home.jpeg"
+      },
+      {
+        "title": "Turn Your Lights Down Low",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Soul%20Bass/Turn%20Your%20Lights%20Down%20Low.jpeg"
+      }
+    ],
+    "color": 19
+  },
   {
     "title": "Urban Spaceman Series",
     "year": "2023–2024",
@@ -180,47 +275,179 @@
     "color": 1
   },
   {
-  "title": "Vertigo Series",
-  "year": "2023–2024",
-  "media": "digital",
-  "description": "Hypnotic dream‑frames: fragmented memories and nocturnal cityscapes drifting between menace and reverie.",
-  "images": [
-    { "title": "Long Way Home",          "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Long%20Way%20Home.jpeg" },
-    { "title": "White Square",           "year": 2023, "url": "https://cdn.deisign.me/Vertigo/White%20Square.jpeg" },
-    { "title": "Key Witness",            "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Key%20Witness.jpeg" },
-    { "title": "Catch 22",               "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Catch%C2%A022.jpeg" },
-    { "title": "One Flew",               "year": 2023, "url": "https://cdn.deisign.me/Vertigo/One%20Flew.jpeg" },
-    { "title": "The Hard Way",           "year": 2023, "url": "https://cdn.deisign.me/Vertigo/The%20Hard%20Way.jpeg" },
-    { "title": "The Hour Before The Dawn","year": 2023,"url": "https://cdn.deisign.me/Vertigo/The%20Hour%20Before%20The%20Dawn.jpeg" },
-    { "title": "Escape",                 "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Escape.jpeg" },
-    { "title": "Don't Look Up",          "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Don't%20Look%20Up.jpeg" },
-    { "title": "One Way Street",         "year": 2023, "url": "https://cdn.deisign.me/Vertigo/One%20Way%20Street.jpeg" },
-    { "title": "Backfire",               "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Backfire.jpeg" },
-    { "title": "Thieves' Highway",       "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Thieves'%20Highway.jpeg" },
-    { "title": "Sacrifice",              "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Sacrifice.jpeg" },
-    { "title": "The Chase",              "year": 2023, "url": "https://cdn.deisign.me/Vertigo/The%20Chase.jpeg" },
-    { "title": "Basic Instinct",         "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Basic%20Instinct.jpeg" },
-    { "title": "The Life in the Wind",   "year": 2023, "url": "https://cdn.deisign.me/Vertigo/The%20Life%20in%20the%20Wind.jpeg" },
-    { "title": "Prohibition",            "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Prohibition.jpeg" },
-    { "title": "Morbido",                "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Morbido.jpeg" },
-    { "title": "Red Trail",              "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Red%20Trail.jpeg" },
-    { "title": "Walk On The Wild Side",  "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Walk%20On%20The%20Wild%20Side.jpeg" },
-    { "title": "Far Away So Close",      "year": 2023, "url": "https://cdn.deisign.me/Vertigo/Far%20Away%20So%20Close.jpeg" },
-    { "title": "Gaslight",               "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Gaslight.jpeg" },
-    { "title": "Before I Wake",          "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Before%20I%20Wake.jpg" },
-    { "title": "The Bed",                "year": 2024, "url": "https://cdn.deisign.me/Vertigo/The%20Bed.jpeg" },
-    { "title": "Moonrise",               "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Moonrise.jpeg" },
-    { "title": "Staircase",              "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Staircase.jpeg" },
-    { "title": "Suspect",                "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Suspect.jpeg" },
-    { "title": "Criss Cross",            "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Criss%20Cross.jpeg" },
-    { "title": "The Wall",               "year": 2024, "url": "https://cdn.deisign.me/Vertigo/The%20Wall.jpeg" },
-    { "title": "Street of Chance",       "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Street%20of%20Chance.jpeg" },
-    { "title": "Eruption",               "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Eruption.jpeg" },
-    { "title": "Pervigilium",            "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Pervigilium.jpeg" },
-    { "title": "Harvest",                "year": 2024, "url": "https://cdn.deisign.me/Vertigo/Harvest.jpeg" }
-  ],
-  "color": 2
-},
+    "title": "Vertigo Series",
+    "year": "2023–2024",
+    "media": "digital",
+    "description": "Hypnotic dream‑frames: fragmented memories and nocturnal cityscapes drifting between menace and reverie.",
+    "images": [
+      {
+        "title": "Long Way Home",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Long%20Way%20Home.jpeg"
+      },
+      {
+        "title": "White Square",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/White%20Square.jpeg"
+      },
+      {
+        "title": "Key Witness",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Key%20Witness.jpeg"
+      },
+      {
+        "title": "Catch 22",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Catch%C2%A022.jpeg"
+      },
+      {
+        "title": "One Flew",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/One%20Flew.jpeg"
+      },
+      {
+        "title": "The Hard Way",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Hard%20Way.jpeg"
+      },
+      {
+        "title": "The Hour Before The Dawn",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Hour%20Before%20The%20Dawn.jpeg"
+      },
+      {
+        "title": "Escape",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Escape.jpeg"
+      },
+      {
+        "title": "Don't Look Up",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Don't%20Look%20Up.jpeg"
+      },
+      {
+        "title": "One Way Street",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/One%20Way%20Street.jpeg"
+      },
+      {
+        "title": "Backfire",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Backfire.jpeg"
+      },
+      {
+        "title": "Thieves' Highway",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Thieves'%20Highway.jpeg"
+      },
+      {
+        "title": "Sacrifice",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Sacrifice.jpeg"
+      },
+      {
+        "title": "The Chase",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Chase.jpeg"
+      },
+      {
+        "title": "Basic Instinct",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Basic%20Instinct.jpeg"
+      },
+      {
+        "title": "The Life in the Wind",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Life%20in%20the%20Wind.jpeg"
+      },
+      {
+        "title": "Prohibition",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Prohibition.jpeg"
+      },
+      {
+        "title": "Morbido",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Morbido.jpeg"
+      },
+      {
+        "title": "Red Trail",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Red%20Trail.jpeg"
+      },
+      {
+        "title": "Walk On The Wild Side",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Walk%20On%20The%20Wild%20Side.jpeg"
+      },
+      {
+        "title": "Far Away So Close",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Vertigo/Far%20Away%20So%20Close.jpeg"
+      },
+      {
+        "title": "Gaslight",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Gaslight.jpeg"
+      },
+      {
+        "title": "Before I Wake",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Before%20I%20Wake.jpg"
+      },
+      {
+        "title": "The Bed",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Bed.jpeg"
+      },
+      {
+        "title": "Moonrise",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Moonrise.jpeg"
+      },
+      {
+        "title": "Staircase",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Staircase.jpeg"
+      },
+      {
+        "title": "Suspect",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Suspect.jpeg"
+      },
+      {
+        "title": "Criss Cross",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Criss%20Cross.jpeg"
+      },
+      {
+        "title": "The Wall",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/The%20Wall.jpeg"
+      },
+      {
+        "title": "Street of Chance",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Street%20of%20Chance.jpeg"
+      },
+      {
+        "title": "Eruption",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Eruption.jpeg"
+      },
+      {
+        "title": "Pervigilium",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Pervigilium.jpeg"
+      },
+      {
+        "title": "Harvest",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Vertigo/Harvest.jpeg"
+      }
+    ],
+    "color": 2
+  },
   {
     "title": "Sacral Series",
     "year": "2023–2025",
@@ -329,285 +556,874 @@
     ],
     "color": 4
   },
-{
-  "title": "Neo Noir Series",
-  "year": "2023–2024",
-  "media": "linocut",
-  "description": "A graphic ode to classic noir tropes—sleek silhouettes, harsh shadows and existential one‑liners, re‑imagined in bold mid‑century blocks.",
-  "images": [
-    { "title": "So?",                "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/So.jpeg" },
-    { "title": "Marlowe",            "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Marlowe.jpeg" },
-    { "title": "Return",             "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Return.jpeg" },
-    { "title": "Follow the Light",   "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Follow%20the%20Light.jpeg" },
-    { "title": "Predator of Love",   "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Predator%20of%20Love.jpeg" },
-    { "title": "Wait",               "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Wait.jpeg" },
-    { "title": "Enter #2",           "year": 2023, "url": "https://cdn.deisign.me/Still%20Life/Still%20Life%20%2305.jpeg" },
-    { "title": "Predator of Love #2","year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/Predator%20of%20Love%C2%A0%232.jpeg" },
-    { "title": "JD",                 "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/JD.jpeg" },
-    { "title": "The Wayward Bus",    "year": 2023, "url": "https://cdn.deisign.me/Neo%20Noir/The%20Wayward%20Bus.jpeg" },
-    { "title": "Foot Fetish",        "year": 2024, "url": "https://cdn.deisign.me/Neo%20Noir/Foot%C2%A0Fetish.jpeg" },
-    { "title": "Trimūrti",           "year": 2024, "url": "https://cdn.deisign.me/Neo%20Noir/Trimurti.jpeg" }
-  ],
-  "color": 5
-},
-{
-  "title": "Modern Dreams Series",
-  "year": "2024–2025",
-  "media": "digital",
-  "description": "Chromatic road‑movie visions: neon highways, endless horizons and synth‑infused nostalgia rendered in crisp pixels.",
-  "images": [
-    { "title": "Autobahn",                "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/Autobahn.jpeg" },
-    { "title": "The Long and Winding Road","year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/The%20Long%20and%20Winding%20Road.jpeg" },
-    { "title": "Lighthouse",              "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/Lighthouse.jpeg" },
-    { "title": "One Two Trip",            "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/One%20Two%20Trip.jpeg" },
-    { "title": "On The Road Again",       "year": 2024, "url": "https://cdn.deisign.me/Modern%20Dreams/On%E2%80%AFThe%E2%80%AFRoad%E2%80%AFAgain.jpeg" },
-    { "title": "Running Up That Hill",    "year": 2025, "url": "https://cdn.deisign.me/Modern%20Dreams/Running%20Up%20That%20Hill.jpeg" }
-  ],
-  "color": 6
-},
-{
-  "title": "Match Box Series",
-  "year": "2019",
-  "media": "digital",
-  "description": "Mini‑posters in the spirit of vintage matchbox graphics: stark icons, bold captions and a wink of dark humour.",
-  "images": [
-    { "title": "Last Supper",                "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Last%20Supper.jpeg" },
-    { "title": "Blackstar",                  "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Blackstar.jpeg" },
-    { "title": "Surf",                       "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Surf.jpeg" },
-    { "title": "Nevermind",                  "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Nevermind.jpeg" },
-    { "title": "Jealousy",                   "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Jealousy.jpeg" },
-    { "title": "Danse Macabre",              "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Danse%C2%A0Macabre.jpeg" },
-    { "title": "Fire Walk with Me",          "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/Fire%C2%A0Walk%20with%C2%A0Me.jpeg" },
-    { "title": "4.20",                       "year": 2019, "url": "https://cdn.deisign.me/Match%20Box/4.20.jpeg" },
-    { "title": "Goat, Cabbage and Wolf Problem","year": 2019,"url": "https://cdn.deisign.me/Match%20Box/Goat%2C%C2%A0Cabbage%20and%C2%A0Wolf%C2%A0Problem.jpeg" }
-  ],
-  "color": 7
-},
-{
-  "title": "Nature Vites Series",
-  "year": "2019–2022",
-  "media": "digital",
-  "description": "Dark botanical vignettes where pop‑culture slogans collide with withered blooms, ash and quiet menace.",
-  "images": [
-    { "title": "Mother's Little Helper",  "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Mother's%20Little%20Helper.jpeg" },
-    { "title": "Fire!",                  "year": 2019, "url": "https://cdn.deisign.me/Nature%20Vites/Fire!.jpeg" },
-    { "title": "December",               "year": 2019, "url": "https://cdn.deisign.me/Nature%20Vites/December.jpeg" },
-    { "title": "Vanitas",                "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Vanitas.jpeg" },
-    { "title": "Shhhh",                  "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Shhhh.jpeg" },
-    { "title": "Mary",                   "year": 2020, "url": "https://cdn.deisign.me/Nature%20Vites/Mary.jpeg" },
-    { "title": "Champagne & Cigarettes", "year": 2022, "url": "https://cdn.deisign.me/Nature%20Vites/Champagne%20%26%20Cigarettes.jpeg" },
-    { "title": "One Shot",               "year": 2022, "url": "https://cdn.deisign.me/Nature%20Vites/One%20Shot.jpeg" }
-  ],
-  "color": 8
-},
   {
-  "title": "Hommages Series",
-  "year": "2019–2022",
-  "media": "digital",
-  "description": "A pocket hall of fame: eight visual tributes that riff on cult albums, cinema frames and modern‑art legends.",
-  "images": [
-    { "title": "Ray",                      "year": 2019, "url": "https://cdn.deisign.me/Hommage/Ray.jpeg" },
-    { "title": "The Kiss",                 "year": 2019, "url": "https://cdn.deisign.me/Hommage/The%20Kiss.jpeg" },
-    { "title": "Turtle Soup",              "year": 2019, "url": "https://cdn.deisign.me/Hommage/Turtle%20Soup.jpeg" },
-    { "title": "The Graduate",             "year": 2019, "url": "https://cdn.deisign.me/Hommage/The%20Graduate.jpeg" },
-    { "title": "Dark Side of the Moon",    "year": 2019, "url": "https://cdn.deisign.me/Hommage/Dark%20Side%20of%20the%20Moon.jpeg" },
-    { "title": "Pop Art Icon",             "year": 2020, "url": "https://cdn.deisign.me/Hommage/Pop%20Art%20Icon.jpeg" },
-    { "title": "Ceci n’est pas une pipe",  "year": 2021, "url": "https://cdn.deisign.me/Hommage/Ceci%20n%E2%80%99est%20pas%20une%20pipe.jpeg" },
-    { "title": "Jazz Blamed",              "year": 2022, "url": "https://cdn.deisign.me/Hommage/Jazz%20Blamed.jpeg" }
-  ],
-  "color": 9
-},
+    "title": "Neo Noir Series",
+    "year": "2023–2024",
+    "media": "linocut",
+    "description": "A graphic ode to classic noir tropes—sleek silhouettes, harsh shadows and existential one‑liners, re‑imagined in bold mid‑century blocks.",
+    "images": [
+      {
+        "title": "So?",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/So.jpeg"
+      },
+      {
+        "title": "Marlowe",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Marlowe.jpeg"
+      },
+      {
+        "title": "Return",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Return.jpeg"
+      },
+      {
+        "title": "Follow the Light",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Follow%20the%20Light.jpeg"
+      },
+      {
+        "title": "Predator of Love",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Predator%20of%20Love.jpeg"
+      },
+      {
+        "title": "Wait",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Wait.jpeg"
+      },
+      {
+        "title": "Enter #2",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Still%20Life/Still%20Life%20%2305.jpeg"
+      },
+      {
+        "title": "Predator of Love #2",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Predator%20of%20Love%C2%A0%232.jpeg"
+      },
+      {
+        "title": "JD",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/JD.jpeg"
+      },
+      {
+        "title": "The Wayward Bus",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Neo%20Noir/The%20Wayward%20Bus.jpeg"
+      },
+      {
+        "title": "Foot Fetish",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Foot%C2%A0Fetish.jpeg"
+      },
+      {
+        "title": "Trimūrti",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Neo%20Noir/Trimurti.jpeg"
+      }
+    ],
+    "color": 5
+  },
   {
-  "title": "Pop Art Tarot Series",
-  "year": "2019–2024",
-  "media": "digital / markers",
-  "description": "Major‑arcana posters colliding bright Pop Art palettes with occult symbolism and bold typography.",
-  "images": [
-    { "title": "The Fool",           "year": 2020, "url": "https://cdn.deisign.me/Tarot/The%20Fool.jpeg" },
-    { "title": "The Magician",       "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Magician.jpeg" },
-    { "title": "The High Priestess", "year": 2020, "url": "https://cdn.deisign.me/Tarot/The%20High%20Priestess.jpeg" },
-    { "title": "The Empress",        "year": 2020, "url": "https://cdn.deisign.me/Tarot/The%20Empress.jpeg" },
-    { "title": "The Hierophant",     "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Hierophant.jpeg" },
-    { "title": "The Lovers",         "year": 2019, "url": "https://cdn.deisign.me/Tarot/lovers.jpg" },
-    { "title": "The Chariot",        "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Chariot.jpeg" },
-    { "title": "The Hermit",         "year": 2020, "url": "https://cdn.deisign.me/Tarot/The%20Hermit.jpeg" },
-    { "title": "Wheel of Fortune",   "year": 2019, "url": "https://cdn.deisign.me/Tarot/Wheel%20of%20Fortune.jpeg" },
-    { "title": "The Devil",          "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Devil.jpeg" },
-    { "title": "The Hanged Man",     "year": 2020, "url": "https://cdn.deisign.me/Tarot/The%20Hanged%20Man.jpeg" },
-    { "title": "Death",              "year": 2019, "url": "https://cdn.deisign.me/Tarot/Death.jpeg" },
-    { "title": "Temperance",         "year": 2019, "url": "https://cdn.deisign.me/Tarot/Temperance.jpeg" },
-    { "title": "The Tower",          "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Tower.jpeg" },
-    { "title": "Judgement",          "year": 2019, "url": "https://cdn.deisign.me/Tarot/Judgement.jpeg" },
-    { "title": "The Star",           "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Star.jpeg" },
-    { "title": "The Moon",           "year": 2019, "url": "https://cdn.deisign.me/Tarot/The%20Moon.jpeg" },
-    { "title": "The Universe",       "year": 2023, "url": "https://cdn.deisign.me/Tarot/The%20Universe.jpeg" },
-    { "title": "The Emperor",        "year": 2024, "url": "https://cdn.deisign.me/Tarot/The%20Emperor.jpeg" }
-  ],
-  "color": 10
-},
-{
-  "title": "Space Age Pop Series",
-  "year": "2022",
-  "media": "digital",
-  "description": "Retro‑futurist road‑trip posters: caravans of rockets, neon highways and lounge‑era optimism bound for distant worlds.",
-  "images": [
-  { "title": "Pilgrims",              "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Pilgrims.jpeg" },
-  { "title": "Traffic Jam",           "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Traffic%20Jam.jpeg" },
-  { "title": "Colonization",          "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Colonization.jpeg" },
-  { "title": "Retro Future",          "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Retro%20Future.jpeg" },
-  { "title": "Orphans of the Sky",    "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Orphans%20of%20the%20Sky.jpeg" },
-  { "title": "Three Comrades",        "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Three%20Comrades.jpeg" },
-  { "title": "To Mars!",              "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/To%C2%A0Mars!.jpeg" },
-  { "title": "Distant Planet",        "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Distant%20Planet.jpeg" },
-  { "title": "And We Will Be Pilots!", "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/And%20We%20Will%20Be%20Pilots!.jpeg" },
-  { "title": "Convoy",                "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Convoy.jpeg" },
-  { "title": "Little Red Corvette",   "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Little%20Red%20Corvette.jpeg" },
-  { "title": "Caravan",               "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Caravan.jpeg" },
-  { "title": "Roadhouse Blues",       "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Roadhouse%20Blues.jpeg" },
-  { "title": "Childhood",             "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Childhood.jpeg" },
-  { "title": "Alien Cities",          "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Alien%20Cities.jpeg" },
-  { "title": "Orange Moon",           "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Orange%20Moon.jpeg" },
-  { "title": "Meeting",               "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Meeting.jpeg" },
-  { "title": "Exodus",                "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Exodus.jpeg" },
-  { "title": "Ejaculation",           "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Ejaculation.jpeg" },
-  { "title": "Landing",               "year": 2022, "url": "https://cdn.deisign.me/Space%20Age/Landing.jpeg" }
-],
-  "color": 11
-},
-{
-  "title": "Noir Désir Series",
-  "year": "2020",
-  "media": "digital",
-  "description": "Five neon‑tinted vignettes that sample motel lights, wet asphalt and rear‑window suspense.",
-  "images": [
-    { "title": "Motel",         "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Motel.jpeg" },
-    { "title": "Noir Désir",    "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Noir%20D%C3%A9sir.jpeg" },
-    { "title": "Table Talk",    "year": 2020, "url": "https://i.imgur.com/Dm8uhU3.jpg" },
-    { "title": "Tunnel of Love","year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Tunnel%20of%20Love.jpeg" },
-    { "title": "Voyeur",        "year": 2020, "url": "https://cdn.deisign.me/Noir%20Desir/Voyeur.jpeg" }
-  ],
-  "color": 12
-},
-{
-  "title": "Propaganda Series",
-  "year": "2019–2022",
-  "media": "digital",
-  "description": "Bold poster statements mixing vintage agit‑prop layouts with 21‑st‑century slogans and frontline irony.",
-  "images": [
-    { "title": "Free Borsht",        "year": 2019, "url": "https://cdn.deisign.me/Propaganda/Free%20Borsht.jpeg" },
-    { "title": "Fireworks",          "year": 2020, "url": "https://cdn.deisign.me/Propaganda/Fireworks.jpeg" },
-    { "title": "La Résistance",      "year": 2021, "url": "https://cdn.deisign.me/Propaganda/La%C2%A0R%C3%A9sistance.jpeg" },
-    { "title": "russian warship",    "year": 2022, "url": "https://cdn.deisign.me/Propaganda/russian%20warship.jpeg" },
-    { "title": "Ukraine Now",        "year": 2022, "url": "https://cdn.deisign.me/Propaganda/Ukraine%C2%A0Now.jpeg" },
-    { "title": "Smoke on the Water", "year": 2022, "url": "https://cdn.deisign.me/Propaganda/Smoke%20on%20the%20Water.jpeg" }
-  ],
-  "color": 13
-},
-{
-  "title": "Book & Album Covers Series",
-  "year": "2019–2025",
-  "media": "digital",
-  "description": "A sleeve‑design anthology: indie albums and literary covers reimagined in stark mid‑century colour blocks and grainy halftone.",
-  "images": [
-    { "title": "Perkalaba Familia — Under the Mushrooms (poster)", "year": 2019, "url": "https://cdn.deisign.me/Covers/Under%20the%20Mushrooms.jpeg" },
-    { "title": "Oleksandr Irvanets — 3+2 (I)",   "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(I).jpeg" },
-    { "title": "Oleksandr Irvanets — 3+2 (II)",  "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(II).jpeg" },
-    { "title": "Oleksandr Irvanets — 3+2 (III)", "year": 2020, "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(III).jpeg" },
-    { "title": "Amphibian Man — Seven",              "year": 2020, "url": "https://cdn.deisign.me/Covers/Seven.jpeg" },
-    { "title": "Amphibian Man — Flaming Home (I)",   "year": 2022, "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(I).jpeg" },
-    { "title": "Amphibian Man — Flaming Home (II)",  "year": 2022, "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(II).jpeg" },
-    { "title": "Amphibian Man — Path (I)",           "year": 2023, "url": "https://cdn.deisign.me/Covers/Path%C2%A0(I).jpeg" },
-    { "title": "Amphibian Man — Path (II)",          "year": 2023, "url": "https://cdn.deisign.me/Covers/Path%C2%A0(II).jpeg" },
-    { "title": "Amphibian Man — Program",            "year": 2023, "url": "https://cdn.deisign.me/Covers/Program.jpeg" },
-    { "title": "Amphibian Man — Zenith",             "year": 2024, "url": "https://cdn.deisign.me/Covers/Zenith.jpeg" },
-    { "title": "Amphibian Man — Ether",              "year": 2025, "url": "https://cdn.deisign.me/Covers/Ether.jpeg" },
-    { "title": "Amphibian Man — Observer",           "year": 2025, "url": "https://cdn.deisign.me/Covers/observer.jpg" }
-  ],
-  "color": 14
-},
-{
-  "title": "Gig Posters Series",
-  "year": "2022–2025",
-  "media": "digital",
-  "description": "Concert one‑sheets soaked in garage grit, surf feedback and jangly jazz — riso‑tinged noise for the eyes.",
-  "images": [
-    { "title": "StrayTones",                                     "year": 2022, "url": "https://cdn.deisign.me/Gigs/StrayTones.jpeg" },
-    { "title": "Ukrabilly New Year",                             "year": 2022, "url": "https://cdn.deisign.me/Gigs/Ukrabilly%20New%20Year.jpeg" },
-    { "title": "KAT / –YCH / Pleroma",                           "year": 2023, "url": "https://cdn.deisign.me/Gigs/KAT%E2%80%93YCH-Pleroma.jpeg" },
-    { "title": "Jazzy Girls",                                    "year": 2023, "url": "https://cdn.deisign.me/Gigs/Jazzy%20Girls.jpeg" },
-    { "title": "SPTP · Kraken Landau · Amphibian Man",           "year": 2023, "url": "https://cdn.deisign.me/Gigs/SPTP%20%C2%B7%20Kraken%20Landau%20%C2%B7%20Amphibian%20Man.jpeg" },
-    { "title": "Vykroutas · Lybid_1 · The Cow · Harmatna",       "year": 2023, "url": "https://cdn.deisign.me/Gigs/Vykroutas%20%C2%B7%20Lybid_1%20%C2%B7%20The%C2%A0Cow%20%C2%B7%20Harmatna.jpeg" },
-    { "title": "Beats from the Crypt",                           "year": 2023, "url": "https://cdn.deisign.me/Gigs/Beats%20from%20the%20Crypt.jpeg" },
-    { "title": "Max Paragraph",                                  "year": 2023, "url": "https://cdn.deisign.me/Gigs/Max%C2%A0Paragraph.jpeg" },
-    { "title": "Vinyl Sunday #3",                                "year": 2023, "url": "https://cdn.deisign.me/Gigs/Vinyl%20Sunday%C2%A0%233.jpeg" },
-    { "title": "Kostyantyn Karachun",                            "year": 2023, "url": "https://cdn.deisign.me/Gigs/Kostyantyn%20Karachun.jpeg" },
-     { "title": "Hot Boogie Club Birthday Party",                "year": 2025, "url": "https://cdn.deisign.me/Gigs/HBC_poster.jpg" }
-  ],
-  "color": 15
-},
-{
-  "title": "Uncategorised Works",
-  "year": "2019–2024",
-  "media": "digital",
-  "description": "Stand‑alone digital posters that don’t fit any specific series — eclectic snapshots of ideas in transit.",
-  "images": [
-    { "title": "Contact",              "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Contact.jpeg" },
-    { "title": "Samsara",              "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Samsara.jpeg" },
-    { "title": "On the Bottom",        "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/On%20the%20Bottom.jpeg" },
-    { "title": "Sangreal",             "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Sangreal.jpeg" },
-    { "title": "Jump They Say",        "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Jump%20They%20Say.jpeg" },
-    { "title": "Toy Story",            "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Toy%20Story.jpeg" },
-    { "title": "Hey Earthlings",       "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Hey%20Earthlings.jpeg" },
-    { "title": "Bad Santa",            "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Bad%20Santa.jpeg" },
-    { "title": "Hazel Mazel",          "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Hazel%20Mazel.jpeg" },
-    { "title": "God's Force",          "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/God's%20Force.jpeg" },
-    { "title": "Threesome",            "year": 2019, "url": "https://cdn.deisign.me/Uncategorised/Threesome.jpeg" },
-    { "title": "Ahoy!",                "year": 2020, "url": "https://cdn.deisign.me/Uncategorised/Ahoy!.jpeg" },
-    { "title": "Girl Power",           "year": 2020, "url": "https://cdn.deisign.me/Uncategorised/Girl%20Power.jpeg" },
-    { "title": "Objects in Mirror",    "year": 2020, "url": "https://cdn.deisign.me/Uncategorised/Objects%20in%20Mirror.jpeg" },
-    { "title": "Dark Night",           "year": 2020, "url": "https://cdn.deisign.me/Uncategorised/Dark%20Night.jpeg" },
-    { "title": "Lullaby of Birdland",  "year": 2020, "url": "https://cdn.deisign.me/Uncategorised/Lullaby%20of%20Birdland.jpeg" },
-    { "title": "Consumer’s Sanctuary", "year": 2021, "url": "https://cdn.deisign.me/Uncategorised/Consumer%E2%80%99s%20Sanctuary.jpeg" },
-    { "title": "The Last Match",       "year": 2022, "url": "https://cdn.deisign.me/Uncategorised/The%20Last%20Match.jpeg" },
-    { "title": "Curfew",               "year": 2022, "url": "https://cdn.deisign.me/Uncategorised/Curfew.jpeg" },
-    { "title": "Drive",                "year": 2024, "url": "https://cdn.deisign.me/Uncategorised/Drive.jpeg" },
-    { "title": "Self Portrait",        "year": 2025, "url": "https://cdn.deisign.me/Uncategorised/Selfportrait.jpeg" }
-  ],
-  "color": 16
-},
-{
-  "title": "Acrylic Works",
-  "year": "2024",
-  "media": "acrylic",
-  "description": "Stand‑alone acrylic canvases in saturated playback‑boogie tones.",
-  "images": [
-    { "title": "Playback", "year": 2024, "url": "https://cdn.deisign.me/Acrylic/Playback.jpeg" },
-    { "title": "Boogie",   "year": 2024, "url": "https://cdn.deisign.me/Acrylic/Boogie.jpeg" }
-  ],
-  "color": 17
-},
-{
-  "title": "Marker Works",
-  "year": "2024",
-  "media": "markers",
-  "description": "Expressive marker sketches: lunar moods, trapped figures and comic‑style heroes.",
-  "images": [
-    { "title": "Half Moon",   "year": 2024, "url": "https://cdn.deisign.me/Markers/Half%C2%A0Moon.jpeg" },
-    { "title": "Trapped",     "year": 2024, "url": "https://cdn.deisign.me/Markers/Trapped.jpeg" },
-    { "title": "The Emperor", "year": 2024, "url": "https://cdn.deisign.me/Tarot/The%20Emperor.jpeg" },
-    { "title": "Equilibrium", "year": 2024, "url": "https://cdn.deisign.me/Markers/Equilibrium.jpeg" },
-    { "title": "Paw Patrol",  "year": 2024, "url": "https://cdn.deisign.me/Markers/Paw%C2%A0Patrol.jpeg" }
-  ],
-  "color": 18
-},
-{
-  "title": "Drypoint",
-  "year": "2023",
-  "media": "drypoint",
-  "description": "intaglio",
-  "images": [
-    { "title": "Ceci n`est pas Duchamp", "year": 2023, "url": "https://cdn.deisign.me/Drypoint/Drypoint.jpg" }
-  ],
-  "color": 23
-}
+    "title": "Modern Dreams Series",
+    "year": "2024–2025",
+    "media": "digital",
+    "description": "Chromatic road‑movie visions: neon highways, endless horizons and synth‑infused nostalgia rendered in crisp pixels.",
+    "images": [
+      {
+        "title": "Autobahn",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/Autobahn.jpeg"
+      },
+      {
+        "title": "The Long and Winding Road",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/The%20Long%20and%20Winding%20Road.jpeg"
+      },
+      {
+        "title": "Lighthouse",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/Lighthouse.jpeg"
+      },
+      {
+        "title": "One Two Trip",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/One%20Two%20Trip.jpeg"
+      },
+      {
+        "title": "On The Road Again",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/On%E2%80%AFThe%E2%80%AFRoad%E2%80%AFAgain.jpeg"
+      },
+      {
+        "title": "Running Up That Hill",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Modern%20Dreams/Running%20Up%20That%20Hill.jpeg"
+      }
+    ],
+    "color": 6
+  },
+  {
+    "title": "Match Box Series",
+    "year": "2019",
+    "media": "digital",
+    "description": "Mini‑posters in the spirit of vintage matchbox graphics: stark icons, bold captions and a wink of dark humour.",
+    "images": [
+      {
+        "title": "Last Supper",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Last%20Supper.jpeg"
+      },
+      {
+        "title": "Blackstar",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Blackstar.jpeg"
+      },
+      {
+        "title": "Surf",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Surf.jpeg"
+      },
+      {
+        "title": "Nevermind",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Nevermind.jpeg"
+      },
+      {
+        "title": "Jealousy",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Jealousy.jpeg"
+      },
+      {
+        "title": "Danse Macabre",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Danse%C2%A0Macabre.jpeg"
+      },
+      {
+        "title": "Fire Walk with Me",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Fire%C2%A0Walk%20with%C2%A0Me.jpeg"
+      },
+      {
+        "title": "4.20",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/4.20.jpeg"
+      },
+      {
+        "title": "Goat, Cabbage and Wolf Problem",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Match%20Box/Goat%2C%C2%A0Cabbage%20and%C2%A0Wolf%C2%A0Problem.jpeg"
+      }
+    ],
+    "color": 7
+  },
+  {
+    "title": "Nature Vites Series",
+    "year": "2019–2022",
+    "media": "digital",
+    "description": "Dark botanical vignettes where pop‑culture slogans collide with withered blooms, ash and quiet menace.",
+    "images": [
+      {
+        "title": "Mother's Little Helper",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Mother's%20Little%20Helper.jpeg"
+      },
+      {
+        "title": "Fire!",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Fire!.jpeg"
+      },
+      {
+        "title": "December",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Nature%20Vites/December.jpeg"
+      },
+      {
+        "title": "Vanitas",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Vanitas.jpeg"
+      },
+      {
+        "title": "Shhhh",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Shhhh.jpeg"
+      },
+      {
+        "title": "Mary",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Mary.jpeg"
+      },
+      {
+        "title": "Champagne & Cigarettes",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Nature%20Vites/Champagne%20%26%20Cigarettes.jpeg"
+      },
+      {
+        "title": "One Shot",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Nature%20Vites/One%20Shot.jpeg"
+      }
+    ],
+    "color": 8
+  },
+  {
+    "title": "Hommages Series",
+    "year": "2019–2022",
+    "media": "digital",
+    "description": "A pocket hall of fame: eight visual tributes that riff on cult albums, cinema frames and modern‑art legends.",
+    "images": [
+      {
+        "title": "Ray",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Hommage/Ray.jpeg"
+      },
+      {
+        "title": "The Kiss",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Hommage/The%20Kiss.jpeg"
+      },
+      {
+        "title": "Turtle Soup",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Hommage/Turtle%20Soup.jpeg"
+      },
+      {
+        "title": "The Graduate",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Hommage/The%20Graduate.jpeg"
+      },
+      {
+        "title": "Dark Side of the Moon",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Hommage/Dark%20Side%20of%20the%20Moon.jpeg"
+      },
+      {
+        "title": "Pop Art Icon",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Hommage/Pop%20Art%20Icon.jpeg"
+      },
+      {
+        "title": "Ceci n’est pas une pipe",
+        "year": 2021,
+        "url": "https://cdn.deisign.me/Hommage/Ceci%20n%E2%80%99est%20pas%20une%20pipe.jpeg"
+      },
+      {
+        "title": "Jazz Blamed",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Hommage/Jazz%20Blamed.jpeg"
+      }
+    ],
+    "color": 9
+  },
+  {
+    "title": "Pop Art Tarot Series",
+    "year": "2019–2024",
+    "media": "digital / markers",
+    "description": "Major‑arcana posters colliding bright Pop Art palettes with occult symbolism and bold typography.",
+    "images": [
+      {
+        "title": "The Fool",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Tarot/The%20Fool.jpeg"
+      },
+      {
+        "title": "The Magician",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Magician.jpeg"
+      },
+      {
+        "title": "The High Priestess",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Tarot/The%20High%20Priestess.jpeg"
+      },
+      {
+        "title": "The Empress",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Tarot/The%20Empress.jpeg"
+      },
+      {
+        "title": "The Hierophant",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Hierophant.jpeg"
+      },
+      {
+        "title": "The Lovers",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/lovers.jpg"
+      },
+      {
+        "title": "The Chariot",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Chariot.jpeg"
+      },
+      {
+        "title": "The Hermit",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Tarot/The%20Hermit.jpeg"
+      },
+      {
+        "title": "Wheel of Fortune",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/Wheel%20of%20Fortune.jpeg"
+      },
+      {
+        "title": "The Devil",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Devil.jpeg"
+      },
+      {
+        "title": "The Hanged Man",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Tarot/The%20Hanged%20Man.jpeg"
+      },
+      {
+        "title": "Death",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/Death.jpeg"
+      },
+      {
+        "title": "Temperance",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/Temperance.jpeg"
+      },
+      {
+        "title": "The Tower",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Tower.jpeg"
+      },
+      {
+        "title": "Judgement",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/Judgement.jpeg"
+      },
+      {
+        "title": "The Star",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Star.jpeg"
+      },
+      {
+        "title": "The Moon",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Tarot/The%20Moon.jpeg"
+      },
+      {
+        "title": "The Universe",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Tarot/The%20Universe.jpeg"
+      },
+      {
+        "title": "The Emperor",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Tarot/The%20Emperor.jpeg"
+      }
+    ],
+    "color": 10
+  },
+  {
+    "title": "Space Age Pop Series",
+    "year": "2022",
+    "media": "digital",
+    "description": "Retro‑futurist road‑trip posters: caravans of rockets, neon highways and lounge‑era optimism bound for distant worlds.",
+    "images": [
+      {
+        "title": "Pilgrims",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Pilgrims.jpeg"
+      },
+      {
+        "title": "Traffic Jam",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Traffic%20Jam.jpeg"
+      },
+      {
+        "title": "Colonization",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Colonization.jpeg"
+      },
+      {
+        "title": "Retro Future",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Retro%20Future.jpeg"
+      },
+      {
+        "title": "Orphans of the Sky",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Orphans%20of%20the%20Sky.jpeg"
+      },
+      {
+        "title": "Three Comrades",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Three%20Comrades.jpeg"
+      },
+      {
+        "title": "To Mars!",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/To%C2%A0Mars!.jpeg"
+      },
+      {
+        "title": "Distant Planet",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Distant%20Planet.jpeg"
+      },
+      {
+        "title": "And We Will Be Pilots!",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/And%20We%20Will%20Be%20Pilots!.jpeg"
+      },
+      {
+        "title": "Convoy",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Convoy.jpeg"
+      },
+      {
+        "title": "Little Red Corvette",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Little%20Red%20Corvette.jpeg"
+      },
+      {
+        "title": "Caravan",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Caravan.jpeg"
+      },
+      {
+        "title": "Roadhouse Blues",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Roadhouse%20Blues.jpeg"
+      },
+      {
+        "title": "Childhood",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Childhood.jpeg"
+      },
+      {
+        "title": "Alien Cities",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Alien%20Cities.jpeg"
+      },
+      {
+        "title": "Orange Moon",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Orange%20Moon.jpeg"
+      },
+      {
+        "title": "Meeting",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Meeting.jpeg"
+      },
+      {
+        "title": "Exodus",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Exodus.jpeg"
+      },
+      {
+        "title": "Ejaculation",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Ejaculation.jpeg"
+      },
+      {
+        "title": "Landing",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Space%20Age/Landing.jpeg"
+      }
+    ],
+    "color": 11
+  },
+  {
+    "title": "Noir Désir Series",
+    "year": "2020",
+    "media": "digital",
+    "description": "Five neon‑tinted vignettes that sample motel lights, wet asphalt and rear‑window suspense.",
+    "images": [
+      {
+        "title": "Motel",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Noir%20Desir/Motel.jpeg"
+      },
+      {
+        "title": "Noir Désir",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Noir%20Desir/Noir%20D%C3%A9sir.jpeg"
+      },
+      {
+        "title": "Table Talk",
+        "year": 2020,
+        "url": "https://i.imgur.com/Dm8uhU3.jpg"
+      },
+      {
+        "title": "Tunnel of Love",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Noir%20Desir/Tunnel%20of%20Love.jpeg"
+      },
+      {
+        "title": "Voyeur",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Noir%20Desir/Voyeur.jpeg"
+      }
+    ],
+    "color": 12
+  },
+  {
+    "title": "Propaganda Series",
+    "year": "2019–2022",
+    "media": "digital",
+    "description": "Bold poster statements mixing vintage agit‑prop layouts with 21‑st‑century slogans and frontline irony.",
+    "images": [
+      {
+        "title": "Free Borsht",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Propaganda/Free%20Borsht.jpeg"
+      },
+      {
+        "title": "Fireworks",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Propaganda/Fireworks.jpeg"
+      },
+      {
+        "title": "La Résistance",
+        "year": 2021,
+        "url": "https://cdn.deisign.me/Propaganda/La%C2%A0R%C3%A9sistance.jpeg"
+      },
+      {
+        "title": "russian warship",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Propaganda/russian%20warship.jpeg"
+      },
+      {
+        "title": "Ukraine Now",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Propaganda/Ukraine%C2%A0Now.jpeg"
+      },
+      {
+        "title": "Smoke on the Water",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Propaganda/Smoke%20on%20the%20Water.jpeg"
+      }
+    ],
+    "color": 13
+  },
+  {
+    "title": "Book & Album Covers Series",
+    "year": "2019–2025",
+    "media": "digital",
+    "description": "A sleeve‑design anthology: indie albums and literary covers reimagined in stark mid‑century colour blocks and grainy halftone.",
+    "images": [
+      {
+        "title": "Perkalaba Familia — Under the Mushrooms (poster)",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Covers/Under%20the%20Mushrooms.jpeg"
+      },
+      {
+        "title": "Oleksandr Irvanets — 3+2 (I)",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(I).jpeg"
+      },
+      {
+        "title": "Oleksandr Irvanets — 3+2 (II)",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(II).jpeg"
+      },
+      {
+        "title": "Oleksandr Irvanets — 3+2 (III)",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Covers/3%2B2%C2%A0(III).jpeg"
+      },
+      {
+        "title": "Amphibian Man — Seven",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Covers/Seven.jpeg"
+      },
+      {
+        "title": "Amphibian Man — Flaming Home (I)",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(I).jpeg"
+      },
+      {
+        "title": "Amphibian Man — Flaming Home (II)",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Covers/Flaming%C2%A0Home%C2%A0(II).jpeg"
+      },
+      {
+        "title": "Amphibian Man — Path (I)",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Covers/Path%C2%A0(I).jpeg"
+      },
+      {
+        "title": "Amphibian Man — Path (II)",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Covers/Path%C2%A0(II).jpeg"
+      },
+      {
+        "title": "Amphibian Man — Program",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Covers/Program.jpeg"
+      },
+      {
+        "title": "Amphibian Man — Zenith",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Covers/Zenith.jpeg"
+      },
+      {
+        "title": "Amphibian Man — Ether",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Covers/Ether.jpeg"
+      },
+      {
+        "title": "Amphibian Man — Observer",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Covers/observer.jpg"
+      }
+    ],
+    "color": 14
+  },
+  {
+    "title": "Gig Posters Series",
+    "year": "2022–2025",
+    "media": "digital",
+    "description": "Concert one‑sheets soaked in garage grit, surf feedback and jangly jazz — riso‑tinged noise for the eyes.",
+    "images": [
+      {
+        "title": "StrayTones",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Gigs/StrayTones.jpeg"
+      },
+      {
+        "title": "Ukrabilly New Year",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Gigs/Ukrabilly%20New%20Year.jpeg"
+      },
+      {
+        "title": "KAT / –YCH / Pleroma",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/KAT%E2%80%93YCH-Pleroma.jpeg"
+      },
+      {
+        "title": "Jazzy Girls",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Jazzy%20Girls.jpeg"
+      },
+      {
+        "title": "SPTP · Kraken Landau · Amphibian Man",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/SPTP%20%C2%B7%20Kraken%20Landau%20%C2%B7%20Amphibian%20Man.jpeg"
+      },
+      {
+        "title": "Vykroutas · Lybid_1 · The Cow · Harmatna",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Vykroutas%20%C2%B7%20Lybid_1%20%C2%B7%20The%C2%A0Cow%20%C2%B7%20Harmatna.jpeg"
+      },
+      {
+        "title": "Beats from the Crypt",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Beats%20from%20the%20Crypt.jpeg"
+      },
+      {
+        "title": "Max Paragraph",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Max%C2%A0Paragraph.jpeg"
+      },
+      {
+        "title": "Vinyl Sunday #3",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Vinyl%20Sunday%C2%A0%233.jpeg"
+      },
+      {
+        "title": "Kostyantyn Karachun",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Gigs/Kostyantyn%20Karachun.jpeg"
+      },
+      {
+        "title": "Hot Boogie Club Birthday Party",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Gigs/HBC_poster.jpg"
+      }
+    ],
+    "color": 15
+  },
+  {
+    "title": "Uncategorised Works",
+    "year": "2019–2026",
+    "media": "digital",
+    "description": "Stand‑alone digital posters that don’t fit any specific series — eclectic snapshots of ideas in transit.",
+    "images": [
+      {
+        "title": "Contact",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Contact.jpeg"
+      },
+      {
+        "title": "Samsara",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Samsara.jpeg"
+      },
+      {
+        "title": "On the Bottom",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/On%20the%20Bottom.jpeg"
+      },
+      {
+        "title": "Sangreal",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Sangreal.jpeg"
+      },
+      {
+        "title": "Jump They Say",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Jump%20They%20Say.jpeg"
+      },
+      {
+        "title": "Toy Story",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Toy%20Story.jpeg"
+      },
+      {
+        "title": "Hey Earthlings",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Hey%20Earthlings.jpeg"
+      },
+      {
+        "title": "Bad Santa",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Bad%20Santa.jpeg"
+      },
+      {
+        "title": "Hazel Mazel",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Hazel%20Mazel.jpeg"
+      },
+      {
+        "title": "God's Force",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/God's%20Force.jpeg"
+      },
+      {
+        "title": "Threesome",
+        "year": 2019,
+        "url": "https://cdn.deisign.me/Uncategorised/Threesome.jpeg"
+      },
+      {
+        "title": "Ahoy!",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Uncategorised/Ahoy!.jpeg"
+      },
+      {
+        "title": "Girl Power",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Uncategorised/Girl%20Power.jpeg"
+      },
+      {
+        "title": "Objects in Mirror",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Uncategorised/Objects%20in%20Mirror.jpeg"
+      },
+      {
+        "title": "Dark Night",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Uncategorised/Dark%20Night.jpeg"
+      },
+      {
+        "title": "Lullaby of Birdland",
+        "year": 2020,
+        "url": "https://cdn.deisign.me/Uncategorised/Lullaby%20of%20Birdland.jpeg"
+      },
+      {
+        "title": "Consumer’s Sanctuary",
+        "year": 2021,
+        "url": "https://cdn.deisign.me/Uncategorised/Consumer%E2%80%99s%20Sanctuary.jpeg"
+      },
+      {
+        "title": "The Last Match",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Uncategorised/The%20Last%20Match.jpeg"
+      },
+      {
+        "title": "Curfew",
+        "year": 2022,
+        "url": "https://cdn.deisign.me/Uncategorised/Curfew.jpeg"
+      },
+      {
+        "title": "Drive",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Uncategorised/Drive.jpeg"
+      },
+      {
+        "title": "Self Portrait",
+        "year": 2025,
+        "url": "https://cdn.deisign.me/Uncategorised/Selfportrait.jpeg"
+      },
+      {
+        "title": "Six O'clock",
+        "year": 2026,
+        "url": "https://cdn.deisign.me/Uncategorised/sixoclock.jpg"
+      }
+    ],
+    "color": 16
+  },
+  {
+    "title": "Acrylic Works",
+    "year": "2024",
+    "media": "acrylic",
+    "description": "Stand‑alone acrylic canvases in saturated playback‑boogie tones.",
+    "images": [
+      {
+        "title": "Playback",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Acrylic/Playback.jpeg"
+      },
+      {
+        "title": "Boogie",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Acrylic/Boogie.jpeg"
+      }
+    ],
+    "color": 17
+  },
+  {
+    "title": "Marker Works",
+    "year": "2024",
+    "media": "markers",
+    "description": "Expressive marker sketches: lunar moods, trapped figures and comic‑style heroes.",
+    "images": [
+      {
+        "title": "Half Moon",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Markers/Half%C2%A0Moon.jpeg"
+      },
+      {
+        "title": "Trapped",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Markers/Trapped.jpeg"
+      },
+      {
+        "title": "The Emperor",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Tarot/The%20Emperor.jpeg"
+      },
+      {
+        "title": "Equilibrium",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Markers/Equilibrium.jpeg"
+      },
+      {
+        "title": "Paw Patrol",
+        "year": 2024,
+        "url": "https://cdn.deisign.me/Markers/Paw%C2%A0Patrol.jpeg"
+      }
+    ],
+    "color": 18
+  },
+  {
+    "title": "Drypoint",
+    "year": "2023",
+    "media": "drypoint",
+    "description": "intaglio",
+    "images": [
+      {
+        "title": "Ceci n`est pas Duchamp",
+        "year": 2023,
+        "url": "https://cdn.deisign.me/Drypoint/Drypoint.jpg"
+      }
+    ],
+    "color": 23
+  }
 ]
